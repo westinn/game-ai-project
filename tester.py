@@ -2,13 +2,21 @@ import gym
 import gym_rle
 import numpy as np
 
-
+ROM = 'ClassicKong-v0'
 EPISODES = 1280
-# BATCH_SIZE = 32
 BATCH_SIZE = 2
 RENDER = True
 
-env = gym.make('ClassicKong-v0')
+print('\n=====================================================================================')
+print('Game ROM: {}'.format(ROM))
+print('# of Episodes: {}'.format(EPISODES))
+print('# of Batches: {}'.format(EPISODES/BATCH_SIZE))
+print('Batch Size: {}'.format(BATCH_SIZE))
+print('=====================================================================================')
+
+print('\nTODO: Current logging records last episode score rather than proper mean/median.\n\n')
+
+env = gym.make(ROM)
 env.reset()
 env.render(RENDER)
 
