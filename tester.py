@@ -34,9 +34,9 @@ for e in range(EPISODES):
         total_reward += reward
         if done:
             print("episode: {}/{}, score: {}, e: {}".format(e+1, EPISODES, total_reward, '~'))
-            import ipdb; ipdb.set_trace();
+            #import ipdb; ipdb.set_trace();
             current_episode.append(total_reward)
-            import ipdb; ipdb.set_trace();
+            #import ipdb; ipdb.set_trace();
     
     if (e % BATCH_SIZE) > 0 and ((e+1) % BATCH_SIZE) == 0:
         print("Finished batch number: {}/{}".format(
