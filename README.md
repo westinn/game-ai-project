@@ -8,7 +8,7 @@ Now utilizing RLE.
 
 # Running and Requirements
 
-To install requirements, run `setup-reqs.sh`.
+To install requirements, run `sh setup-reqs.sh`.
 This will run a simple `pip install -e .` over the `gym-rle` directory to install the library properly.
 
 Currently to test environment interaction, you can run the `tester.py` in the root of the repo.
