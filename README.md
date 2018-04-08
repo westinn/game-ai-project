@@ -6,7 +6,7 @@ Currently targetting Classic Kong on SNES.
 Created basic building blocks before we set up environment fully.
 Now utilizing RLE.
 
-# Running and requirements
+# Running and Requirements
 
 To install requirements, run `setup-reqs.sh`.
 This will run a simple `pip install -e .` over the `gym-rle` directory to install the library properly.
