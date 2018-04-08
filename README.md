@@ -11,7 +11,7 @@ Now utilizing RLE.
 To install requirements, run `setup-reqs.sh`.
 This will run a simple `pip install -e .` over the `gym-rle` directory to install the library properly.
 
-![Example](https://raw.githubusercontent.com/westinn/game-ai-project/setup-example.png)
+![Example](https://raw.githubusercontent.com/westinn/game-ai-project/master/setup-example.png)
 
 
 # Running
