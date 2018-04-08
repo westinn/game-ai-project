@@ -14,4 +14,6 @@ This will run a simple `pip install -e .` over the `gym-rle` directory to instal
 Currently to test environment interaction, you can run the `tester.py` in the root of the repo.
 `runner.py` should be the final product once we get our DQN implemention functioning.
 
+To shut down the program, `ctrl + c` in the running terminal will end the runner.
+
 ![Example](https://raw.githubusercontent.com/westinn/game-ai-project/master/setup-example.png)
