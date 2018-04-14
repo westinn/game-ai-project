@@ -16,4 +16,4 @@ Currently to test environment interaction, you can run the `tester.py` in the ro
 
 To shut down the program, `ctrl + c` in the running terminal will end the runner.
 
-![Example](https://raw.githubusercontent.com/westinn/game-ai-project/master/setup-example.png)
+![Example](https://raw.githubusercontent.com/westinn/game-ai-project/master/examples/setup-example.png)
