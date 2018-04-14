@@ -62,3 +62,4 @@ for batch, episodes in batch_scores.items():
         batch,
         np.mean(episodes), np.median(episodes),
         episodes))
+print('\n')
