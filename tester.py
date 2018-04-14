@@ -8,7 +8,7 @@ ROM = 'ClassicKong-v0'
 # BATCH_SIZE = 32
 EPISODES = 18
 BATCH_SIZE = 3
-RENDER = False
+RENDER = True
 
 env = gym.make(ROM)
 preprocessor = image_preprocess.ImagePreprocessors()

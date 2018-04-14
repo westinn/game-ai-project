@@ -11,7 +11,7 @@ RENDER = False
 
 env = gym.make(ROM)
 FRAMESKIP = env.unwrapped.frameskip
-state_size = (env.observation_space.shape[0] * env.observation_space.shape[1])
+state_size = 96 * 84 * 1
 action_size = env.action_space.n
 
 print('\n=====================================================================================')
@@ -42,6 +42,7 @@ for e in range(EPISODES):
         next_action = agent.act(state)
         # act using the best action and save results
         next_state, reward, done, _ = env.step(next_action)
+        # take the last frame of 4, and preprocess that one as the next state
         next_state = preprocessor.pre_process_image(next_state[-1])
 
         reward = reward if not done else -10
@@ -50,6 +51,7 @@ for e in range(EPISODES):
         # iterate forward into next state
         state = next_state
         total_reward += reward
+
     print("Episode: {}/{}, Score: {}, e: {}".format(e + 1, EPISODES, total_reward, '~'))
     current_episode.append(total_reward)
 

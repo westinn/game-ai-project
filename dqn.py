@@ -31,23 +31,25 @@ class DQNAgent:
         # 96x84 pixel input with 1 frame with 4 stride
         self.model.add(Conv2D(
             32,
-            (8, 8),
-            input_shape=(4, 96, 84),
+            8, 8,
+            input_shape=(96, 84, 1),
             subsample=(4, 4), activation='relu'))
         # 2nd Conv2D after inputs
         self.model.add(Conv2D(
             64,
-            (4, 4),
+            4, 4,
             subsample=(2, 2), activation='relu'))
         # 3rd Conv2D after inputs
         self.model.add(Conv2D(
             64,
-            (3, 3),
+            3, 3,
             subsample=(1, 1), activation='relu'))
         # Flatten Conv
         self.model.add(Flatten())
+
         # Normal 512 node hidden layer
         self.model.add(Dense(512, activation='relu'))
+
         # Output of possible inputs to environment
         self.model.add(Dense(self.action_size))
 
