@@ -4,13 +4,13 @@ import numpy as np
 
 ROM = 'ClassicKong-v0'
 EPISODES = 1280
-BATCH_SIZE = 2
+BATCH_SIZE = 32
 RENDER = True
 
 print('\n=====================================================================================')
 print('Game ROM: {}'.format(ROM))
 print('# of Episodes: {}'.format(EPISODES))
-print('# of Batches: {}'.format(EPISODES/BATCH_SIZE))
+print('# of Batches: {}'.format(EPISODES / BATCH_SIZE))
 print('Batch Size: {}'.format(BATCH_SIZE))
 print('=====================================================================================')
 
@@ -40,14 +40,15 @@ for e in range(EPISODES):
         state = next_state
         total_reward += reward
         if done:
-            print("episode: {}/{}, score: {}, e: {}".format(e+1, EPISODES, total_reward, '~'))
+            print("episode: {}/{}, score: {}, e: {}".format(e +
+                                                            1, EPISODES, total_reward, '~'))
             current_episode.append(total_reward)
-    
-    if (e % BATCH_SIZE) > 0 and ((e+1) % BATCH_SIZE) == 0:
+
+    if (e % BATCH_SIZE) > 0 and ((e + 1) % BATCH_SIZE) == 0:
         print("Finished batch number: {}/{}".format(
-            total_batches+1, (EPISODES/BATCH_SIZE)))
+            total_batches + 1, (EPISODES / BATCH_SIZE)))
         print("Mean: {} | Median: {}{}".format(
-            np.mean(current_episode), np.median(current_episode), 
+            np.mean(current_episode), np.median(current_episode),
             '\n'))
         batch_scores[total_batches] = current_episode
         total_batches += 1
@@ -55,6 +56,6 @@ for e in range(EPISODES):
 print("\n\n\nFinished all batches\n")
 for batch, episodes in batch_scores.items():
     print("| Batch#:{} | Mean:{} | Meadian:{} | Episodes:{} |".format(
-        batch, 
-        np.mean(episodes), np.median(episodes), 
+        batch,
+        np.mean(episodes), np.median(episodes),
         episodes))

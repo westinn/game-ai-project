@@ -28,7 +28,7 @@ class DQNAgent:
         # Neural Net for Deep-Q learning Model
         self.model = Sequential()
         # 1st Conv2D after inputs
-        # 96x84 pixel input with 4 frames with 4 stride
+        # 96x84 pixel input with 1 frame with 4 stride
         self.model.add(Conv2D(
             32,
             (8, 8),
@@ -51,8 +51,8 @@ class DQNAgent:
         # Output of possible inputs to environment
         self.model.add(Dense(self.action_size))
 
-        self.model.compile(loss='mse', optimizer=Adam(lr=0.00001))
-        return model
+        self.model.compile(loss=huber_loss, optimizer=Adam(lr=0.00001))
+        return self.model
 
     def remember(self, state, action, reward, next_state, done):
         self.memory.append((state, action, reward, next_state, done))
