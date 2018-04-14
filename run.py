@@ -6,12 +6,11 @@ from dqn import DQNAgent
 ROM = 'ClassicKong-v0'
 EPISODES = 1280
 BATCH_SIZE = 32
-RENDER = True
+RENDER = False
 
 env = gym.make(ROM)
 FRAMESKIP = env.unwrapped.frameskip
-state_size = (
-    env.observation_space.shape[0] * env.observation_space.shape[1])
+state_size = (env.observation_space.shape[0] * env.observation_space.shape[1])
 action_size = env.action_space.n
 
 print('\n=====================================================================================')
@@ -26,21 +25,25 @@ print('=========================================================================
 print('\nTODO: Current logging records last episode score rather than proper mean/median.\n\n')
 
 agent = DQNAgent(state_size, action_size)
+preprocessor = image_preprocess.ImagePreprocessors()
 total_batches = 0
 batch_scores = {}
 
+# step the first args last frame, reset, render
 for e in range(EPISODES):
-    state = env.reset()
+    state = preprocessor.pre_process_image(env.reset())
     total_reward = 0
     done = False
 
     while not done:
         if RENDER:
             env.render()
-        # predict best, next action
+        # predict best action
         next_action = agent.act(state)
         # act using the best action and save results
         next_state, reward, done, _ = env.step(next_action)
+        next_state = preprocessor.pre_process_image(next_state[-1])
+
         reward = reward if not done else -10
         # save result of taking best action on current state into memory
         agent.remember(state, next_action, reward, next_state, done)
