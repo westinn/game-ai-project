@@ -16,14 +16,13 @@ class DQNAgent:
     def __init__(self, state_size, action_size):
         self.state_size = state_size
         self.action_size = action_size
-        self.memory = deque(maxlen=2000)
 
         # logging
         self.total_loss = 0.0
 
         # define the input shape
         self.width = 84
-        self.height = 96
+        self.height = 84#96
         self.state_length = 4
 
         self.batch_size = 32
@@ -39,18 +38,18 @@ class DQNAgent:
 
         # TODO
         # double check this
-        self.opt = RMSprop(lr=self.learning_rate, rho=self.gamma, decay=0.0, epsilon=self.epsilon)
+        self.opt = RMSprop(lr=self.learning_rate, rho=0.99, decay=0.0, epsilon=1e-8)
+
+        self.memory = deque(maxlen=2000)
 
         self.model = self._build_model()
         self.target_network = self._build_model()
         self.target_network.set_weights(self.model.get_weights())
 
 
-
-
+    # Neural Net for Deep-Q learning Model
     def _build_model(self):
-        # Neural Net for Deep-Q learning Model
-        self.model = Sequential()
+        # model = Sequential()
         # 1st Conv2D after inputs
         # 96x84 pixel input with 1 frame with 4 stride
 
@@ -66,9 +65,10 @@ class DQNAgent:
         lrelu = LeakyReLU()(hidden)
         q_value_prediction = Dense(self.action_size)(lrelu)
 
-        select_q_value_of_action = Multiply()([q_value_prediction,action])
+        select_q_value_of_action = Multiply()([q_value_prediction, action])
 
-        target_q_value = Lambda(lambda x:K.sum(x, axis=-1, keepdims=True),output_shape=lambda_out_shape)(select_q_value_of_action)
+        target_q_value = Lambda(lambda x: K.sum(x, axis=-1, keepdims=True),
+                                output_shape=lambda_out_shape)(select_q_value_of_action)
 
         model = Model(inputs=[input, action], outputs=[q_value_prediction, target_q_value])
 
@@ -76,14 +76,17 @@ class DQNAgent:
 
         return model
 
+
     def remember(self, state, action, reward, next_state, done):
         self.memory.append((state, action, reward, next_state, done))
+
 
     def act(self, state):
         if np.random.rand() <= self.epsilon:
             return random.randrange(self.action_size)
         act_values = self.model.predict(state)
         return np.argmax(act_values[0])  # returns action
+
 
     def replay(self, BATCH_SIZE):
         state_batch = []
@@ -105,7 +108,9 @@ class DQNAgent:
         done_batch = np.array(done_batch) + 0
 
         # Q value from target network
-        target_q_values_batch = self.target_network.predict([list2np(next_state_batch),self.dummy_batch])[0]
+        print('Prediction time')
+        print(list2np(next_state_batch))
+        target_q_values_batch = self.target_network.predict([list2np(next_state_batch), self.dummy_batch])[0]
 
         y_batch = reward_batch + (1 - done_batch) * self.gamma * np.max(target_q_values_batch, axis=-1)
 
@@ -114,8 +119,9 @@ class DQNAgent:
         for idx, ac in enumerate(action_batch):
             a_one_hot[idx, ac] = 1.0
 
-        loss = self.model.train_on_batch([list2np(state_batch), a_one_hot], [self.dummy_batch,y_batch])
+        loss = self.model.train_on_batch([list2np(state_batch), a_one_hot], [self.dummy_batch, y_batch])
         self.total_loss += loss[1]
+
         #         target = (reward + self.gamma *
         #                   np.amax(self.model.predict(next_state)[0]))
         #     target_f = self.model.predict(state)

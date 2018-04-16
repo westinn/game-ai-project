@@ -7,7 +7,7 @@ from dqn import DQNAgent
 ROM = 'ClassicKong-v0'
 EPISODES = 1280
 BATCH_SIZE = 32
-RENDER = False
+RENDER = True
 
 env = gym.make(ROM)
 FRAMESKIP = env.unwrapped.frameskip
