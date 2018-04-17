@@ -46,7 +46,6 @@ class DQNAgent:
         self.target_network = self._build_model()
         self.target_network.set_weights(self.model.get_weights())
 
-
     # Neural Net for Deep-Q learning Model
     def _build_model(self):
         # model = Sequential()
@@ -76,17 +75,14 @@ class DQNAgent:
 
         return model
 
-
     def remember(self, state, action, reward, next_state, done):
         self.memory.append((state, action, reward, next_state, done))
-
 
     def act(self, state):
         if np.random.rand() <= self.epsilon:
             return random.randrange(self.action_size)
         act_values = self.model.predict(state)
         return np.argmax(act_values[0])  # returns action
-
 
     def replay(self, BATCH_SIZE):
         state_batch = []
@@ -103,7 +99,6 @@ class DQNAgent:
             reward_batch.append(reward)
             next_state_batch.append(next_state)
             done_batch.append(done)
-
 
         done_batch = np.array(done_batch) + 0
 
@@ -135,6 +130,7 @@ class DQNAgent:
 
     def save(self, name):
         self.model.save_weights(name)
+
 
 def lambda_out_shape(input_shape):
     shape = list(input_shape)
