@@ -1,4 +1,4 @@
-cd lib/gym-rle;
+cd lib/gym_rle;
 pip install -e .;
 pip install scipy;
 pip install pillow;
