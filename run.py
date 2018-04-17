@@ -11,7 +11,7 @@ RENDER = True
 
 env = gym.make(ROM)
 FRAMESKIP = env.unwrapped.frameskip
-state_size = 96 * 84 * 1
+state_size = 84 * 84 * 1
 action_size = env.action_space.n
 
 print('\n=====================================================================================')
@@ -31,12 +31,9 @@ batch_scores = {}
 current_episode = []
 # step the first args last frame, reset, render
 for e in range(EPISODES):
-    state = preprocessor.pre_process_image(env.reset())
+    state = [preprocessor.pre_process_image(env.reset())] * FRAMESKIP
     total_reward = 0
     done = False
-
-    # TODO
-    # currently total reward is reset each episode, is that correct?
 
     # count frame number
     frame_number = 0
@@ -51,12 +48,9 @@ for e in range(EPISODES):
         next_action = agent.act(state)
         # act using the best action and save results
         next_state, reward, done, _ = env.step(next_action)
+        # preprocess
+        next_state = list(map(preprocessor.pre_process_image, next_state))
 
-        # TODO
-        # we may not need preprocessing
-
-        # take the last frame of 4, and preprocess that one as the next state
-        next_state = preprocessor.pre_process_image(next_state[-1])
         agent.learn(last_state, next_action, reward, done, next_state, frame_number)
 
         # update reward and frame count
@@ -64,12 +58,8 @@ for e in range(EPISODES):
         reward = reward if not done else -10
         total_reward += reward
 
-
     print("Episode: {}/{}, Score: {}, e: {}".format(e + 1, EPISODES, total_reward, '~'))
     current_episode.append(total_reward)
-
-    # if len(agent.memory) > BATCH_SIZE:
-    #     agent.replay(BATCH_SIZE)
 
     if (e % BATCH_SIZE) > 0 and ((e + 1) % BATCH_SIZE) == 0:
         print("Finished batch: {}/{}".format(total_batches + 1, int(EPISODES / BATCH_SIZE)))

@@ -122,12 +122,11 @@ class RleEnv(gym.Env, utils.EzPickle):
 
         if isinstance(self.frameskip, int):
             num_steps = self.frameskip
-        #else: num_steps = self.np_random.randint(self.frameskip[0], self.frameskip[1])
+        # else: num_steps = self.np_random.randint(self.frameskip[0], self.frameskip[1])
         ob = []
-        for i in range(num_steps):
+        for _ in range(num_steps):
             reward += self.rle.act(action)
             ob.append(self._get_obs())
-
         return ob, reward, self.rle.game_over(), {"rle.lives": self.rle.lives()}
 
     def _get_image(self):

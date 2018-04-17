@@ -61,8 +61,7 @@ class DQNAgent:
     # Neural Net for Deep-Q learning Model
     def _build_model(self):
         # 1st Conv2D after inputs
-        # 96x84 pixel input with 1 frame with 4 stride
-
+        # 84x84 pixel input with 4 frames with 4 stride
         input_shape = Input(shape=(self.width, self.height, self.state_length))
         action = Input(shape=(self.action_size,))
 
@@ -103,7 +102,7 @@ class DQNAgent:
             save_interval = 300000
             if frame_number % save_interval == 0:
                 # TODO
-                print('save network')
+                print('Save network.')
         # return the max q
         # np.max(self.model.predict([np.expand_dims(last_state, axis=0), self.dummy_input])[0])
         return
