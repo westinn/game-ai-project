@@ -11,5 +11,5 @@ class ImagePreprocessors:
         img_gray = 0.2990 * r + 0.5870 * g + 0.1140 * b
         # downsample
         ds_image = scipy.misc.imresize(img_gray, size=img_size, interp='bicubic')
-
+        
         return ds_image

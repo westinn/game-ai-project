@@ -22,7 +22,7 @@ class DQNAgent:
 
         # define the input shape
         self.width = 84
-        self.height = 84#96
+        self.height = 84  # 96
         self.state_length = 4
 
         self.batch_size = 32
@@ -55,9 +55,6 @@ class DQNAgent:
 
     # Neural Net for Deep-Q learning Model
     def _build_model(self):
-        # second method
-        #model = Sequential()
-        #model.add(Conv2D(32, 8, 8, input=))
         # 1st Conv2D after inputs
         # 96x84 pixel input with 1 frame with 4 stride
 
@@ -84,7 +81,6 @@ class DQNAgent:
 
         return model
 
-
     def learn(self, last_state, action, reward, next_state, done, frame_number):
         # save state
         self.memory.append((last_state, action, reward, next_state, done))
@@ -101,20 +97,18 @@ class DQNAgent:
 
             save_interval = 300000
             if frame_number % save_interval == 0:
-                #TODO
+                # TODO
                 print('save network')
 
         # return the max q
         # np.max(self.model.predict([np.expand_dims(last_state, axis=0), self.dummy_input])[0])
         return
 
-
     def act(self, state):
         if np.random.rand() <= self.epsilon:
             return random.randrange(self.action_size)
         act_values = self.model.predict(state)
         return np.argmax(act_values[0])  # returns action
-
 
     def train(self):
         state_batch = []
@@ -133,7 +127,6 @@ class DQNAgent:
             done_batch.append(done)
 
         done_batch = np.array(done_batch) + 0
-
         # Q value from target network
         print('Prediction time')
         print(list2np(next_state_batch))
@@ -148,7 +141,6 @@ class DQNAgent:
 
         loss = self.model.train_on_batch([list2np(state_batch), a_one_hot], [self.dummy_batch, y_batch])
         self.total_loss += loss[1]
-
         #         target = (reward + self.gamma *
         #                   np.amax(self.model.predict(next_state)[0]))
         #     target_f = self.model.predict(state)
