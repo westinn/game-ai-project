@@ -101,7 +101,7 @@ def test(total_episodes=30):
             # store current state
             last_state = state
             # predict best action
-            next_action = agent.act(state)
+            next_action = agent.test_act(state)
             # act using the best action and save results
             next_state, reward, done, _ = env.step(next_action)
 
