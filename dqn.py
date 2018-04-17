@@ -18,7 +18,7 @@ def list2np(in_list):
 
 
 class DQNAgent:
-    def __init__(self, state_size, action_size):
+    def __init__(self, action_size, state_size=(4, 1, 84, 84)):
         self.state_size = state_size
         self.action_size = action_size
 
@@ -38,7 +38,7 @@ class DQNAgent:
         self.dummy_input = numpy.zeros((1, self.action_size))
         self.dummy_batch = numpy.zeros((self.batch_size, self.action_size))
 
-        self.gamma = 0.95    # discount rate
+        self.gamma = 0.95  # discount rate
         self.epsilon = 1.0  # exploration rate
         self.epsilon_min = 0.01
         self.epsilon_decay = 0.995

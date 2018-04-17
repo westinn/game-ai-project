@@ -24,7 +24,7 @@ print('# of Batches: {}'.format(int(EPISODES / BATCH_SIZE)))
 print('Batch Size: {}'.format(BATCH_SIZE))
 print('=====================================================================================\n')
 
-agent = DQNAgent(state_size, action_size)
+agent = DQNAgent(action_size, state_size)
 preprocessor = image_preprocess.ImagePreprocessors()
 
 def train():
