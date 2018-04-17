@@ -40,8 +40,15 @@ class DQNAgent:
         # double check this
         self.opt = RMSprop(lr=self.learning_rate, rho=0.99, decay=0.0, epsilon=1e-8)
 
-        self.memory = deque(maxlen=2000)
+        # Can hold up to 2000 states at a time
+        self.deque_len = 2000
+        self.memory = deque(maxlen=self.deque_len + 1)
 
+        # testing variables
+        self.initial_replay_size = 10000
+        self.target_update_interval = 1000
+
+        # build the network
         self.model = self._build_model()
         self.target_network = self._build_model()
         self.target_network.set_weights(self.model.get_weights())
@@ -49,14 +56,16 @@ class DQNAgent:
 
     # Neural Net for Deep-Q learning Model
     def _build_model(self):
-        # model = Sequential()
+        # second method
+        #model = Sequential()
+        #model.add(Conv2D(32, 8, 8, input=))
         # 1st Conv2D after inputs
         # 96x84 pixel input with 1 frame with 4 stride
 
-        input = Input(shape=(self.width, self.height, self.state_length))
+        input_shape = Input(shape=(self.width, self.height, self.state_length))
         action = Input(shape=(self.action_size,))
 
-        conv1 = Conv2D(32, (8, 8), strides=(4, 4), activation='relu')(input)
+        conv1 = Conv2D(32, (8, 8), strides=(4, 4), activation='relu')(input_shape)
         conv2 = Conv2D(64, (4, 4), strides=(4, 4), activation='relu')(conv1)
         conv3 = Conv2D(64, (4, 4), strides=(4, 4), activation='relu')(conv2)
 
@@ -70,15 +79,35 @@ class DQNAgent:
         target_q_value = Lambda(lambda x: K.sum(x, axis=-1, keepdims=True),
                                 output_shape=lambda_out_shape)(select_q_value_of_action)
 
-        model = Model(inputs=[input, action], outputs=[q_value_prediction, target_q_value])
+        model = Model(inputs=[input_shape, action], outputs=[q_value_prediction, target_q_value])
 
         model.compile(loss=['mse', 'mse'], loss_weights=[0.0, 1.0], optimizer=self.opt)
 
         return model
 
 
-    def remember(self, state, action, reward, next_state, done):
-        self.memory.append((state, action, reward, next_state, done))
+    def learn(self, last_state, action, reward, next_state, done, frame_number):
+        # save state
+        self.memory.append((last_state, action, reward, next_state, done))
+
+        if len(self.memory) > self.deque_len:
+            self.memory.popleft()
+
+        if frame_number >= self.initial_replay_size:
+            if frame_number % 4 == 0:
+                self.train()
+
+            if frame_number % self.target_update_interval == 0:
+                self.target_network.set_weights(self.model.get_weights())
+
+            save_interval = 300000
+            if frame_number % save_interval == 0:
+                #TODO
+                print('save network')
+
+        # return the max q
+        # np.max(self.model.predict([np.expand_dims(last_state, axis=0), self.dummy_input])[0])
+        return
 
 
     def act(self, state):
@@ -88,7 +117,7 @@ class DQNAgent:
         return np.argmax(act_values[0])  # returns action
 
 
-    def replay(self, BATCH_SIZE):
+    def train(self):
         state_batch = []
         action_batch = []
         reward_batch = []
@@ -96,14 +125,13 @@ class DQNAgent:
         done_batch = []
         y_batch = []
 
-        minibatch = random.sample(self.memory, BATCH_SIZE)
+        minibatch = random.sample(self.memory, self.batch_size)
         for state, action, reward, next_state, done in minibatch:
             state_batch.append(state)
             action_batch.append(action)
             reward_batch.append(reward)
             next_state_batch.append(next_state)
             done_batch.append(done)
-
 
         done_batch = np.array(done_batch) + 0
 
@@ -114,7 +142,7 @@ class DQNAgent:
 
         y_batch = reward_batch + (1 - done_batch) * self.gamma * np.max(target_q_values_batch, axis=-1)
 
-        a_one_hot = np.zeros((self.batch_size,self.num_actions))
+        a_one_hot = np.zeros((self.batch_size, self.action_size))
 
         for idx, ac in enumerate(action_batch):
             a_one_hot[idx, ac] = 1.0

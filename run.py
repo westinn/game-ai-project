@@ -35,28 +35,41 @@ for e in range(EPISODES):
     total_reward = 0
     done = False
 
+    # TODO
+    # currently total reward is reset each episode, is that correct?
+
+    # count frame number
+    frame_number = 0
+
     while not done:
         if RENDER:
             env.render()
+
+        # store current state
+        last_state = state
         # predict best action
         next_action = agent.act(state)
         # act using the best action and save results
         next_state, reward, done, _ = env.step(next_action)
+
+        # TODO
+        # we may not need preprocessing
+
         # take the last frame of 4, and preprocess that one as the next state
         next_state = preprocessor.pre_process_image(next_state[-1])
+        agent.learn(last_state, next_action, reward, done, next_state, frame_number)
 
+        # update reward and frame count
+        frame_number += 1
         reward = reward if not done else -10
-        # save result of taking best action on current state into memory
-        agent.remember(state, next_action, reward, next_state, done)
-        # iterate forward into next state
-        state = next_state
         total_reward += reward
+
 
     print("Episode: {}/{}, Score: {}, e: {}".format(e + 1, EPISODES, total_reward, '~'))
     current_episode.append(total_reward)
 
-    if len(agent.memory) > BATCH_SIZE:
-        agent.replay(BATCH_SIZE)
+    # if len(agent.memory) > BATCH_SIZE:
+    #     agent.replay(BATCH_SIZE)
 
     if (e % BATCH_SIZE) > 0 and ((e + 1) % BATCH_SIZE) == 0:
         print("Finished batch: {}/{}".format(total_batches + 1, int(EPISODES / BATCH_SIZE)))
