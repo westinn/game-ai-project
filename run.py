@@ -11,7 +11,8 @@ RENDER = False
 
 env = gym.make(ROM)
 FRAMESKIP = env.unwrapped.frameskip
-state_size = 96 * 84 * 1
+# 4 frames of 84x84 gray-scaled + down-sampled
+state_size = (FRAMESKIP, 1, 84, 84)
 action_size = env.action_space.n
 
 print('\n=====================================================================================')
@@ -23,7 +24,7 @@ print('# of Batches: {}'.format(int(EPISODES / BATCH_SIZE)))
 print('Batch Size: {}'.format(BATCH_SIZE))
 print('=====================================================================================\n')
 
-agent = DQNAgent(state_size, action_size)
+agent = DQNAgent(action_size, state_size)
 preprocessor = image_preprocess.ImagePreprocessors()
 
 total_batches = 0
@@ -31,7 +32,7 @@ batch_scores = {}
 current_episode = []
 # step the first args last frame, reset, render
 for e in range(EPISODES):
-    state = preprocessor.pre_process_image(env.reset())
+    state = [preprocessor.pre_process_image(env.reset())] * state_size[0]
     total_reward = 0
     done = False
 
@@ -44,7 +45,6 @@ for e in range(EPISODES):
         next_state, reward, done, _ = env.step(next_action)
         # take the last frame of 4, and preprocess that one as the next state
         next_state = preprocessor.pre_process_image(next_state[-1])
-
         reward = reward if not done else -10
         # save result of taking best action on current state into memory
         agent.remember(state, next_action, reward, next_state, done)
