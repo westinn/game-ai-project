@@ -1,5 +1,5 @@
 import random
-import numpy as np
+import numpy
 from collections import deque
 from keras.models import Sequential, Model
 from keras.layers import Dense, Conv2D, Flatten, Input, LeakyReLU, Multiply, Lambda
@@ -7,9 +7,14 @@ from keras.optimizers import Adam, RMSprop
 import keras.backend as K
 
 
-def huber_loss(y_true, y_pred):
-    import tensorflow as tf
-    return tf.losses.huber_loss(y_true, y_pred)
+def lambda_out_shape(input_shape):
+    shape = list(input_shape)
+    shape[-1] = 1
+    return tuple(shape)
+
+
+def list2np(in_list):
+    return numpy.float32(numpy.array(in_list))
 
 
 class DQNAgent:
@@ -27,8 +32,8 @@ class DQNAgent:
 
         self.batch_size = 32
 
-        self.dummy_input = np.zeros((1, self.action_size))
-        self.dummy_batch = np.zeros((self.batch_size, self.action_size))
+        self.dummy_input = numpy.zeros((1, self.action_size))
+        self.dummy_batch = numpy.zeros((self.batch_size, self.action_size))
 
         self.gamma = 0.95    # discount rate
         self.epsilon = 1.0  # exploration rate
@@ -105,10 +110,10 @@ class DQNAgent:
         return
 
     def act(self, state):
-        if np.random.rand() <= self.epsilon:
+        if numpy.random.rand() <= self.epsilon:
             return random.randrange(self.action_size)
         act_values = self.model.predict(state)
-        return np.argmax(act_values[0])  # returns action
+        return numpy.argmax(act_values[0])  # returns action
 
     def train(self):
         state_batch = []
@@ -132,9 +137,9 @@ class DQNAgent:
         print(list2np(next_state_batch))
         target_q_values_batch = self.target_network.predict([list2np(next_state_batch), self.dummy_batch])[0]
 
-        y_batch = reward_batch + (1 - done_batch) * self.gamma * np.max(target_q_values_batch, axis=-1)
+        y_batch = reward_batch + (1 - done_batch) * self.gamma * numpy.max(target_q_values_batch, axis=-1)
 
-        a_one_hot = np.zeros((self.batch_size, self.action_size))
+        a_one_hot = numpy.zeros((self.batch_size, self.action_size))
 
         for idx, ac in enumerate(action_batch):
             a_one_hot[idx, ac] = 1.0
@@ -154,13 +159,3 @@ class DQNAgent:
 
     def save(self, name):
         self.model.save_weights(name)
-
-
-def lambda_out_shape(input_shape):
-    shape = list(input_shape)
-    shape[-1] = 1
-    return tuple(shape)
-
-
-def list2np(in_list):
-    return np.float32(np.array(in_list))
