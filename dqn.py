@@ -104,7 +104,6 @@ class DQNAgent:
             if frame_number % save_interval == 0:
                 # TODO
                 print('save network')
-
         # return the max q
         # np.max(self.model.predict([np.expand_dims(last_state, axis=0), self.dummy_input])[0])
         return
