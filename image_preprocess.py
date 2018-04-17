@@ -1,5 +1,5 @@
 import scipy.misc
-import numpy as np
+import numpy
 
 
 class ImagePreprocessors:
@@ -12,7 +12,7 @@ class ImagePreprocessors:
         img_gray = 0.2990 * r + 0.5870 * g + 0.1140 * b
         # downsample
         ds_image = scipy.misc.imresize(img_gray, size=img_size, interp='bicubic')
-        # erase padding of wide resolutions
+        # erase padding of wide resolutions, can change later for tall resolutions
         w_h_diff = abs(img_size[1] - img_size[0])
         is_square_image = w_h_diff == 0
         if not is_square_image:
@@ -21,5 +21,5 @@ class ImagePreprocessors:
             padding_to_delete_end = [i for i in range(len(ds_image[0]) - 1, (len(ds_image[0]) - 1 - padding), -1)]
             padding_to_delete.extend(padding_to_delete_end)
             # modify downsampled image to be square
-            ds_image = np.delete(ds_image, padding_to_delete, axis=1)
+            ds_image = numpy.delete(ds_image, padding_to_delete, axis=1)
         return ds_image
