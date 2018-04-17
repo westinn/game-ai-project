@@ -1,0 +1,1456 @@
+=====================================================================================
+Game ROM: ClassicKong-v0
+State Size: 8064
+Action Size: 8
+
+# of Episodes: 1280
+# of Batches: 40
+Batch Size: 32
+=====================================================================================
+
+2018-04-16 23:56:36.223409: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+Episode: 1/1280, Score: 290.0, e: ~
+Episode: 2/1280, Score: 90.0, e: ~
+Episode: 3/1280, Score: 1890.0, e: ~
+Episode: 4/1280, Score: 290.0, e: ~
+Episode: 5/1280, Score: 190.0, e: ~
+Episode: 6/1280, Score: 390.0, e: ~
+Episode: 7/1280, Score: 390.0, e: ~
+Episode: 8/1280, Score: 1090.0, e: ~
+Episode: 9/1280, Score: 390.0, e: ~
+Episode: 10/1280, Score: 290.0, e: ~
+Episode: 11/1280, Score: 290.0, e: ~
+Episode: 12/1280, Score: 390.0, e: ~
+Episode: 13/1280, Score: 390.0, e: ~
+Episode: 14/1280, Score: 1590.0, e: ~
+Episode: 15/1280, Score: 490.0, e: ~
+Episode: 16/1280, Score: 290.0, e: ~
+Episode: 17/1280, Score: 190.0, e: ~
+Episode: 18/1280, Score: 290.0, e: ~
+Episode: 19/1280, Score: 290.0, e: ~
+Episode: 20/1280, Score: 290.0, e: ~
+Episode: 21/1280, Score: 190.0, e: ~
+Episode: 22/1280, Score: 690.0, e: ~
+Episode: 23/1280, Score: 790.0, e: ~
+Episode: 24/1280, Score: 390.0, e: ~
+Episode: 25/1280, Score: 190.0, e: ~
+Episode: 26/1280, Score: 290.0, e: ~
+Episode: 27/1280, Score: 390.0, e: ~
+Episode: 28/1280, Score: 290.0, e: ~
+Episode: 29/1280, Score: 990.0, e: ~
+Episode: 30/1280, Score: 290.0, e: ~
+Episode: 31/1280, Score: 190.0, e: ~
+Episode: 32/1280, Score: 1490.0, e: ~
+Finished batch: 1/40
+Mean: 499.375 | Median: 290.0
+
+Episode: 33/1280, Score: 190.0, e: ~
+Episode: 34/1280, Score: 290.0, e: ~
+Episode: 35/1280, Score: 290.0, e: ~
+Episode: 36/1280, Score: 690.0, e: ~
+Episode: 37/1280, Score: 190.0, e: ~
+Episode: 38/1280, Score: 290.0, e: ~
+Episode: 39/1280, Score: 290.0, e: ~
+Episode: 40/1280, Score: 290.0, e: ~
+Episode: 41/1280, Score: 490.0, e: ~
+Episode: 42/1280, Score: 1790.0, e: ~
+Episode: 43/1280, Score: 590.0, e: ~
+Episode: 44/1280, Score: 290.0, e: ~
+Episode: 45/1280, Score: 490.0, e: ~
+Episode: 46/1280, Score: 990.0, e: ~
+Episode: 47/1280, Score: 290.0, e: ~
+Episode: 48/1280, Score: 2690.0, e: ~
+Episode: 49/1280, Score: 990.0, e: ~
+Episode: 50/1280, Score: 490.0, e: ~
+Episode: 51/1280, Score: 1590.0, e: ~
+Episode: 52/1280, Score: 390.0, e: ~
+Episode: 53/1280, Score: 90.0, e: ~
+Episode: 54/1280, Score: 290.0, e: ~
+Episode: 55/1280, Score: 1790.0, e: ~
+Episode: 56/1280, Score: 1090.0, e: ~
+Episode: 57/1280, Score: 1190.0, e: ~
+Episode: 58/1280, Score: 290.0, e: ~
+Episode: 59/1280, Score: 190.0, e: ~
+Episode: 60/1280, Score: 190.0, e: ~
+Episode: 61/1280, Score: 390.0, e: ~
+Episode: 62/1280, Score: 890.0, e: ~
+Episode: 63/1280, Score: 290.0, e: ~
+Episode: 64/1280, Score: 290.0, e: ~
+Finished batch: 2/40
+Mean: 643.125 | Median: 340.0
+
+Episode: 65/1280, Score: 690.0, e: ~
+Episode: 66/1280, Score: 1890.0, e: ~
+Episode: 67/1280, Score: 990.0, e: ~
+Episode: 68/1280, Score: 790.0, e: ~
+Episode: 69/1280, Score: 590.0, e: ~
+Episode: 70/1280, Score: 290.0, e: ~
+Episode: 71/1280, Score: 690.0, e: ~
+Episode: 72/1280, Score: 190.0, e: ~
+Episode: 73/1280, Score: 290.0, e: ~
+Episode: 74/1280, Score: 490.0, e: ~
+Episode: 75/1280, Score: 590.0, e: ~
+Episode: 76/1280, Score: 390.0, e: ~
+Episode: 77/1280, Score: 1390.0, e: ~
+Episode: 78/1280, Score: 290.0, e: ~
+Episode: 79/1280, Score: 490.0, e: ~
+Episode: 80/1280, Score: 90.0, e: ~
+Episode: 81/1280, Score: 190.0, e: ~
+Episode: 82/1280, Score: -10.0, e: ~
+Episode: 83/1280, Score: 190.0, e: ~
+Episode: 84/1280, Score: 290.0, e: ~
+Episode: 85/1280, Score: 490.0, e: ~
+Episode: 86/1280, Score: 390.0, e: ~
+Episode: 87/1280, Score: 1990.0, e: ~
+Episode: 88/1280, Score: 1790.0, e: ~
+Episode: 89/1280, Score: 190.0, e: ~
+Episode: 90/1280, Score: 190.0, e: ~
+Episode: 91/1280, Score: 490.0, e: ~
+Episode: 92/1280, Score: 290.0, e: ~
+Episode: 93/1280, Score: 790.0, e: ~
+Episode: 94/1280, Score: 490.0, e: ~
+Episode: 95/1280, Score: 390.0, e: ~
+Episode: 96/1280, Score: 590.0, e: ~
+Finished batch: 3/40
+Mean: 590.0 | Median: 490.0
+
+Episode: 97/1280, Score: 290.0, e: ~
+Episode: 98/1280, Score: 290.0, e: ~
+Episode: 99/1280, Score: 290.0, e: ~
+Episode: 100/1280, Score: 290.0, e: ~
+Episode: 101/1280, Score: 390.0, e: ~
+Episode: 102/1280, Score: 290.0, e: ~
+Episode: 103/1280, Score: 590.0, e: ~
+Episode: 104/1280, Score: 190.0, e: ~
+Episode: 105/1280, Score: 290.0, e: ~
+Episode: 106/1280, Score: 290.0, e: ~
+Episode: 107/1280, Score: 290.0, e: ~
+Episode: 108/1280, Score: 390.0, e: ~
+Episode: 109/1280, Score: 90.0, e: ~
+Episode: 110/1280, Score: 2090.0, e: ~
+Episode: 111/1280, Score: 290.0, e: ~
+Episode: 112/1280, Score: 1790.0, e: ~
+Episode: 113/1280, Score: 90.0, e: ~
+Episode: 114/1280, Score: 490.0, e: ~
+Episode: 115/1280, Score: 290.0, e: ~
+Episode: 116/1280, Score: 390.0, e: ~
+Episode: 117/1280, Score: 90.0, e: ~
+Episode: 118/1280, Score: 590.0, e: ~
+Episode: 119/1280, Score: 290.0, e: ~
+Episode: 120/1280, Score: 290.0, e: ~
+Episode: 121/1280, Score: 1290.0, e: ~
+Episode: 122/1280, Score: 290.0, e: ~
+Episode: 123/1280, Score: 1890.0, e: ~
+Episode: 124/1280, Score: 590.0, e: ~
+Episode: 125/1280, Score: 290.0, e: ~
+Episode: 126/1280, Score: 290.0, e: ~
+Episode: 127/1280, Score: 590.0, e: ~
+Episode: 128/1280, Score: 390.0, e: ~
+Finished batch: 4/40
+Mean: 508.75 | Median: 290.0
+
+Episode: 129/1280, Score: 390.0, e: ~
+Episode: 130/1280, Score: 290.0, e: ~
+Episode: 131/1280, Score: 590.0, e: ~
+Episode: 132/1280, Score: 290.0, e: ~
+Episode: 133/1280, Score: 290.0, e: ~
+Episode: 134/1280, Score: 290.0, e: ~
+Episode: 135/1280, Score: 490.0, e: ~
+Episode: 136/1280, Score: 290.0, e: ~
+Episode: 137/1280, Score: 290.0, e: ~
+Episode: 138/1280, Score: 2090.0, e: ~
+Episode: 139/1280, Score: 490.0, e: ~
+Episode: 140/1280, Score: 190.0, e: ~
+Episode: 141/1280, Score: 590.0, e: ~
+Episode: 142/1280, Score: 290.0, e: ~
+Episode: 143/1280, Score: 490.0, e: ~
+Episode: 144/1280, Score: 390.0, e: ~
+Episode: 145/1280, Score: 390.0, e: ~
+Episode: 146/1280, Score: 190.0, e: ~
+Episode: 147/1280, Score: 290.0, e: ~
+Episode: 148/1280, Score: 290.0, e: ~
+Episode: 149/1280, Score: 290.0, e: ~
+Episode: 150/1280, Score: 290.0, e: ~
+Episode: 151/1280, Score: 990.0, e: ~
+Episode: 152/1280, Score: 290.0, e: ~
+Episode: 153/1280, Score: 490.0, e: ~
+Episode: 154/1280, Score: 290.0, e: ~
+Episode: 155/1280, Score: 290.0, e: ~
+Episode: 156/1280, Score: 490.0, e: ~
+Episode: 157/1280, Score: 290.0, e: ~
+Episode: 158/1280, Score: 290.0, e: ~
+Episode: 159/1280, Score: 490.0, e: ~
+Episode: 160/1280, Score: 690.0, e: ~
+Finished batch: 5/40
+Mean: 440.0 | Median: 290.0
+
+Episode: 161/1280, Score: 1190.0, e: ~
+Episode: 162/1280, Score: 290.0, e: ~
+Episode: 163/1280, Score: 1790.0, e: ~
+Episode: 164/1280, Score: 1690.0, e: ~
+Episode: 165/1280, Score: 790.0, e: ~
+Episode: 166/1280, Score: 390.0, e: ~
+Episode: 167/1280, Score: 290.0, e: ~
+Episode: 168/1280, Score: 390.0, e: ~
+Episode: 169/1280, Score: 190.0, e: ~
+Episode: 170/1280, Score: 1890.0, e: ~
+Episode: 171/1280, Score: -10.0, e: ~
+Episode: 172/1280, Score: 290.0, e: ~
+Episode: 173/1280, Score: 290.0, e: ~
+Episode: 174/1280, Score: 690.0, e: ~
+Episode: 175/1280, Score: 390.0, e: ~
+Episode: 176/1280, Score: 290.0, e: ~
+Episode: 177/1280, Score: 290.0, e: ~
+Episode: 178/1280, Score: 290.0, e: ~
+Episode: 179/1280, Score: 2190.0, e: ~
+Episode: 180/1280, Score: 290.0, e: ~
+Episode: 181/1280, Score: 190.0, e: ~
+Episode: 182/1280, Score: 1090.0, e: ~
+Episode: 183/1280, Score: 190.0, e: ~
+Episode: 184/1280, Score: 790.0, e: ~
+Episode: 185/1280, Score: 290.0, e: ~
+Episode: 186/1280, Score: 1090.0, e: ~
+Episode: 187/1280, Score: 890.0, e: ~
+Episode: 188/1280, Score: 290.0, e: ~
+Episode: 189/1280, Score: 390.0, e: ~
+Episode: 190/1280, Score: 390.0, e: ~
+Episode: 191/1280, Score: 390.0, e: ~
+Episode: 192/1280, Score: 290.0, e: ~
+Finished batch: 6/40
+Mean: 630.625 | Median: 390.0
+
+Episode: 193/1280, Score: 390.0, e: ~
+Episode: 194/1280, Score: -10.0, e: ~
+Episode: 195/1280, Score: 290.0, e: ~
+Episode: 196/1280, Score: 290.0, e: ~
+Episode: 197/1280, Score: 290.0, e: ~
+Episode: 198/1280, Score: 190.0, e: ~
+Episode: 199/1280, Score: 290.0, e: ~
+Episode: 200/1280, Score: 390.0, e: ~
+Episode: 201/1280, Score: 490.0, e: ~
+Episode: 202/1280, Score: 190.0, e: ~
+Episode: 203/1280, Score: 490.0, e: ~
+Episode: 204/1280, Score: 190.0, e: ~
+Episode: 205/1280, Score: 690.0, e: ~
+Episode: 206/1280, Score: 490.0, e: ~
+Episode: 207/1280, Score: 1590.0, e: ~
+Episode: 208/1280, Score: 2290.0, e: ~
+Episode: 209/1280, Score: 290.0, e: ~
+Episode: 210/1280, Score: 490.0, e: ~
+Episode: 211/1280, Score: 390.0, e: ~
+Episode: 212/1280, Score: 290.0, e: ~
+Episode: 213/1280, Score: 290.0, e: ~
+Episode: 214/1280, Score: 190.0, e: ~
+Episode: 215/1280, Score: -10.0, e: ~
+Episode: 216/1280, Score: 490.0, e: ~
+Episode: 217/1280, Score: 290.0, e: ~
+Episode: 218/1280, Score: 1890.0, e: ~
+Episode: 219/1280, Score: 690.0, e: ~
+Episode: 220/1280, Score: 390.0, e: ~
+Episode: 221/1280, Score: -10.0, e: ~
+Episode: 222/1280, Score: 690.0, e: ~
+Episode: 223/1280, Score: 290.0, e: ~
+Episode: 224/1280, Score: 90.0, e: ~
+Finished batch: 7/40
+Mean: 477.5 | Median: 290.0
+
+Episode: 225/1280, Score: 490.0, e: ~
+Episode: 226/1280, Score: 290.0, e: ~
+Episode: 227/1280, Score: 390.0, e: ~
+Episode: 228/1280, Score: 190.0, e: ~
+Episode: 229/1280, Score: 290.0, e: ~
+Episode: 230/1280, Score: 1090.0, e: ~
+Episode: 231/1280, Score: 390.0, e: ~
+Episode: 232/1280, Score: 190.0, e: ~
+Episode: 233/1280, Score: 490.0, e: ~
+Episode: 234/1280, Score: 190.0, e: ~
+Episode: 235/1280, Score: 290.0, e: ~
+Episode: 236/1280, Score: 190.0, e: ~
+Episode: 237/1280, Score: 290.0, e: ~
+Episode: 238/1280, Score: 290.0, e: ~
+Episode: 239/1280, Score: 290.0, e: ~
+Episode: 240/1280, Score: 1990.0, e: ~
+Episode: 241/1280, Score: 190.0, e: ~
+Episode: 242/1280, Score: 190.0, e: ~
+Episode: 243/1280, Score: 290.0, e: ~
+Episode: 244/1280, Score: 190.0, e: ~
+Episode: 245/1280, Score: 290.0, e: ~
+Episode: 246/1280, Score: 290.0, e: ~
+Episode: 247/1280, Score: 90.0, e: ~
+Episode: 248/1280, Score: 190.0, e: ~
+Episode: 249/1280, Score: 290.0, e: ~
+Episode: 250/1280, Score: 490.0, e: ~
+Episode: 251/1280, Score: 290.0, e: ~
+Episode: 252/1280, Score: 190.0, e: ~
+Episode: 253/1280, Score: 490.0, e: ~
+Episode: 254/1280, Score: 290.0, e: ~
+Episode: 255/1280, Score: 190.0, e: ~
+Episode: 256/1280, Score: 490.0, e: ~
+Finished batch: 8/40
+Mean: 368.125 | Median: 290.0
+
+Episode: 257/1280, Score: 290.0, e: ~
+Episode: 258/1280, Score: 290.0, e: ~
+Episode: 259/1280, Score: 390.0, e: ~
+Episode: 260/1280, Score: 190.0, e: ~
+Episode: 261/1280, Score: 690.0, e: ~
+Episode: 262/1280, Score: 290.0, e: ~
+Episode: 263/1280, Score: 290.0, e: ~
+Episode: 264/1280, Score: 290.0, e: ~
+Episode: 265/1280, Score: 390.0, e: ~
+Episode: 266/1280, Score: 290.0, e: ~
+Episode: 267/1280, Score: 390.0, e: ~
+Episode: 268/1280, Score: 290.0, e: ~
+Episode: 269/1280, Score: 1390.0, e: ~
+Episode: 270/1280, Score: 290.0, e: ~
+Episode: 271/1280, Score: 290.0, e: ~
+Episode: 272/1280, Score: 1090.0, e: ~
+Episode: 273/1280, Score: 290.0, e: ~
+Episode: 274/1280, Score: 1390.0, e: ~
+Episode: 275/1280, Score: 290.0, e: ~
+Episode: 276/1280, Score: 290.0, e: ~
+Episode: 277/1280, Score: 90.0, e: ~
+Episode: 278/1280, Score: 290.0, e: ~
+Episode: 279/1280, Score: 390.0, e: ~
+Episode: 280/1280, Score: 2090.0, e: ~
+Episode: 281/1280, Score: 390.0, e: ~
+Episode: 282/1280, Score: 90.0, e: ~
+Episode: 283/1280, Score: 290.0, e: ~
+Episode: 284/1280, Score: 290.0, e: ~
+Episode: 285/1280, Score: 290.0, e: ~
+Episode: 286/1280, Score: 390.0, e: ~
+Episode: 287/1280, Score: 190.0, e: ~
+Episode: 288/1280, Score: 1690.0, e: ~
+Finished batch: 9/40
+Mean: 496.25 | Median: 290.0
+
+Episode: 289/1280, Score: 390.0, e: ~
+Episode: 290/1280, Score: 90.0, e: ~
+Episode: 291/1280, Score: 1690.0, e: ~
+Episode: 292/1280, Score: 90.0, e: ~
+Episode: 293/1280, Score: 490.0, e: ~
+Episode: 294/1280, Score: 590.0, e: ~
+Episode: 295/1280, Score: 390.0, e: ~
+Episode: 296/1280, Score: 290.0, e: ~
+Episode: 297/1280, Score: 290.0, e: ~
+Episode: 298/1280, Score: 1390.0, e: ~
+Episode: 299/1280, Score: 290.0, e: ~
+Episode: 300/1280, Score: 390.0, e: ~
+Episode: 301/1280, Score: 190.0, e: ~
+Episode: 302/1280, Score: 290.0, e: ~
+Episode: 303/1280, Score: 390.0, e: ~
+Episode: 304/1280, Score: 390.0, e: ~
+Episode: 305/1280, Score: 90.0, e: ~
+Episode: 306/1280, Score: 190.0, e: ~
+Episode: 307/1280, Score: 190.0, e: ~
+Episode: 308/1280, Score: 290.0, e: ~
+Episode: 309/1280, Score: 290.0, e: ~
+Episode: 310/1280, Score: 690.0, e: ~
+Episode: 311/1280, Score: 190.0, e: ~
+Episode: 312/1280, Score: 1690.0, e: ~
+Episode: 313/1280, Score: 590.0, e: ~
+Episode: 314/1280, Score: 290.0, e: ~
+Episode: 315/1280, Score: 890.0, e: ~
+Episode: 316/1280, Score: 290.0, e: ~
+Episode: 317/1280, Score: 290.0, e: ~
+Episode: 318/1280, Score: 990.0, e: ~
+Episode: 319/1280, Score: 190.0, e: ~
+Episode: 320/1280, Score: 690.0, e: ~
+Finished batch: 10/40
+Mean: 483.75 | Median: 290.0
+
+Episode: 321/1280, Score: 190.0, e: ~
+Episode: 322/1280, Score: 390.0, e: ~
+Episode: 323/1280, Score: 1990.0, e: ~
+Episode: 324/1280, Score: 290.0, e: ~
+Episode: 325/1280, Score: 290.0, e: ~
+Episode: 326/1280, Score: 390.0, e: ~
+Episode: 327/1280, Score: 190.0, e: ~
+Episode: 328/1280, Score: 390.0, e: ~
+Episode: 329/1280, Score: 690.0, e: ~
+Episode: 330/1280, Score: 390.0, e: ~
+Episode: 331/1280, Score: 490.0, e: ~
+Episode: 332/1280, Score: 90.0, e: ~
+Episode: 333/1280, Score: 290.0, e: ~
+Episode: 334/1280, Score: 290.0, e: ~
+Episode: 335/1280, Score: 590.0, e: ~
+Episode: 336/1280, Score: 790.0, e: ~
+Episode: 337/1280, Score: 890.0, e: ~
+Episode: 338/1280, Score: 1690.0, e: ~
+Episode: 339/1280, Score: 290.0, e: ~
+Episode: 340/1280, Score: 390.0, e: ~
+Episode: 341/1280, Score: 90.0, e: ~
+Episode: 342/1280, Score: 290.0, e: ~
+Episode: 343/1280, Score: 390.0, e: ~
+Episode: 344/1280, Score: 290.0, e: ~
+Episode: 345/1280, Score: 1290.0, e: ~
+Episode: 346/1280, Score: 1090.0, e: ~
+Episode: 347/1280, Score: 490.0, e: ~
+Episode: 348/1280, Score: 690.0, e: ~
+Episode: 349/1280, Score: 290.0, e: ~
+Episode: 350/1280, Score: 390.0, e: ~
+Episode: 351/1280, Score: 290.0, e: ~
+Episode: 352/1280, Score: 390.0, e: ~
+Finished batch: 11/40
+Mean: 530.625 | Median: 390.0
+
+Episode: 353/1280, Score: 190.0, e: ~
+Episode: 354/1280, Score: 190.0, e: ~
+Episode: 355/1280, Score: 290.0, e: ~
+Episode: 356/1280, Score: 390.0, e: ~
+Episode: 357/1280, Score: 290.0, e: ~
+Episode: 358/1280, Score: 390.0, e: ~
+Episode: 359/1280, Score: 290.0, e: ~
+Episode: 360/1280, Score: 190.0, e: ~
+Episode: 361/1280, Score: 290.0, e: ~
+Episode: 362/1280, Score: 190.0, e: ~
+Episode: 363/1280, Score: 690.0, e: ~
+Episode: 364/1280, Score: 290.0, e: ~
+Episode: 365/1280, Score: 190.0, e: ~
+Episode: 366/1280, Score: 390.0, e: ~
+Episode: 367/1280, Score: 490.0, e: ~
+Episode: 368/1280, Score: 290.0, e: ~
+Episode: 369/1280, Score: 290.0, e: ~
+Episode: 370/1280, Score: 1990.0, e: ~
+Episode: 371/1280, Score: 290.0, e: ~
+Episode: 372/1280, Score: 390.0, e: ~
+Episode: 373/1280, Score: 390.0, e: ~
+Episode: 374/1280, Score: 390.0, e: ~
+Episode: 375/1280, Score: 190.0, e: ~
+Episode: 376/1280, Score: 390.0, e: ~
+Episode: 377/1280, Score: 290.0, e: ~
+Episode: 378/1280, Score: 490.0, e: ~
+Episode: 379/1280, Score: 390.0, e: ~
+Episode: 380/1280, Score: 1690.0, e: ~
+Episode: 381/1280, Score: 290.0, e: ~
+Episode: 382/1280, Score: 290.0, e: ~
+Episode: 383/1280, Score: 190.0, e: ~
+Episode: 384/1280, Score: 290.0, e: ~
+Finished batch: 12/40
+Mean: 415.0 | Median: 290.0
+
+Episode: 385/1280, Score: 2090.0, e: ~
+Episode: 386/1280, Score: 290.0, e: ~
+Episode: 387/1280, Score: -10.0, e: ~
+Episode: 388/1280, Score: 390.0, e: ~
+Episode: 389/1280, Score: 190.0, e: ~
+Episode: 390/1280, Score: 690.0, e: ~
+Episode: 391/1280, Score: 490.0, e: ~
+Episode: 392/1280, Score: 390.0, e: ~
+Episode: 393/1280, Score: 590.0, e: ~
+Episode: 394/1280, Score: 290.0, e: ~
+Episode: 395/1280, Score: 90.0, e: ~
+Episode: 396/1280, Score: 290.0, e: ~
+Episode: 397/1280, Score: 490.0, e: ~
+Episode: 398/1280, Score: 290.0, e: ~
+Episode: 399/1280, Score: 490.0, e: ~
+Episode: 400/1280, Score: 590.0, e: ~
+Episode: 401/1280, Score: 390.0, e: ~
+Episode: 402/1280, Score: 90.0, e: ~
+Episode: 403/1280, Score: 290.0, e: ~
+Episode: 404/1280, Score: 190.0, e: ~
+Episode: 405/1280, Score: 490.0, e: ~
+Episode: 406/1280, Score: 290.0, e: ~
+Episode: 407/1280, Score: 390.0, e: ~
+Episode: 408/1280, Score: 490.0, e: ~
+Episode: 409/1280, Score: 290.0, e: ~
+Episode: 410/1280, Score: 90.0, e: ~
+Episode: 411/1280, Score: 1890.0, e: ~
+Episode: 412/1280, Score: 290.0, e: ~
+Episode: 413/1280, Score: 490.0, e: ~
+Episode: 414/1280, Score: 190.0, e: ~
+Episode: 415/1280, Score: 490.0, e: ~
+Episode: 416/1280, Score: 290.0, e: ~
+Finished batch: 13/40
+Mean: 446.25 | Median: 340.0
+
+Episode: 417/1280, Score: 190.0, e: ~
+Episode: 418/1280, Score: 290.0, e: ~
+Episode: 419/1280, Score: 290.0, e: ~
+Episode: 420/1280, Score: 690.0, e: ~
+Episode: 421/1280, Score: 390.0, e: ~
+Episode: 422/1280, Score: 390.0, e: ~
+Episode: 423/1280, Score: 390.0, e: ~
+Episode: 424/1280, Score: 1690.0, e: ~
+Episode: 425/1280, Score: 490.0, e: ~
+Episode: 426/1280, Score: 490.0, e: ~
+Episode: 427/1280, Score: 290.0, e: ~
+Episode: 428/1280, Score: 790.0, e: ~
+Episode: 429/1280, Score: 290.0, e: ~
+Episode: 430/1280, Score: 290.0, e: ~
+Episode: 431/1280, Score: 390.0, e: ~
+Episode: 432/1280, Score: 290.0, e: ~
+Episode: 433/1280, Score: 290.0, e: ~
+Episode: 434/1280, Score: 490.0, e: ~
+Episode: 435/1280, Score: 290.0, e: ~
+Episode: 436/1280, Score: 390.0, e: ~
+Episode: 437/1280, Score: 290.0, e: ~
+Episode: 438/1280, Score: 890.0, e: ~
+Episode: 439/1280, Score: 390.0, e: ~
+Episode: 440/1280, Score: 790.0, e: ~
+Episode: 441/1280, Score: 290.0, e: ~
+Episode: 442/1280, Score: 390.0, e: ~
+Episode: 443/1280, Score: 90.0, e: ~
+Episode: 444/1280, Score: 290.0, e: ~
+Episode: 445/1280, Score: 390.0, e: ~
+Episode: 446/1280, Score: 290.0, e: ~
+Episode: 447/1280, Score: 290.0, e: ~
+Episode: 448/1280, Score: 290.0, e: ~
+Finished batch: 14/40
+Mean: 430.625 | Median: 340.0
+
+Episode: 449/1280, Score: 290.0, e: ~
+Episode: 450/1280, Score: 490.0, e: ~
+Episode: 451/1280, Score: 490.0, e: ~
+Episode: 452/1280, Score: 1490.0, e: ~
+Episode: 453/1280, Score: 190.0, e: ~
+Episode: 454/1280, Score: 790.0, e: ~
+Episode: 455/1280, Score: 590.0, e: ~
+Episode: 456/1280, Score: 290.0, e: ~
+Episode: 457/1280, Score: 190.0, e: ~
+Episode: 458/1280, Score: 490.0, e: ~
+Episode: 459/1280, Score: 290.0, e: ~
+Episode: 460/1280, Score: 290.0, e: ~
+Episode: 461/1280, Score: 390.0, e: ~
+Episode: 462/1280, Score: 290.0, e: ~
+Episode: 463/1280, Score: 490.0, e: ~
+Episode: 464/1280, Score: 590.0, e: ~
+Episode: 465/1280, Score: 190.0, e: ~
+Episode: 466/1280, Score: -10.0, e: ~
+Episode: 467/1280, Score: 490.0, e: ~
+Episode: 468/1280, Score: 90.0, e: ~
+Episode: 469/1280, Score: 1790.0, e: ~
+Episode: 470/1280, Score: 290.0, e: ~
+Episode: 471/1280, Score: 390.0, e: ~
+Episode: 472/1280, Score: 590.0, e: ~
+Episode: 473/1280, Score: 190.0, e: ~
+Episode: 474/1280, Score: 490.0, e: ~
+Episode: 475/1280, Score: 390.0, e: ~
+Episode: 476/1280, Score: 590.0, e: ~
+Episode: 477/1280, Score: 1890.0, e: ~
+Episode: 478/1280, Score: 1190.0, e: ~
+Episode: 479/1280, Score: 490.0, e: ~
+Episode: 480/1280, Score: 590.0, e: ~
+Finished batch: 15/40
+Mean: 540.0 | Median: 490.0
+
+Episode: 481/1280, Score: 390.0, e: ~
+Episode: 482/1280, Score: 90.0, e: ~
+Episode: 483/1280, Score: 590.0, e: ~
+Episode: 484/1280, Score: 290.0, e: ~
+Episode: 485/1280, Score: 290.0, e: ~
+Episode: 486/1280, Score: 290.0, e: ~
+Episode: 487/1280, Score: 590.0, e: ~
+Episode: 488/1280, Score: 290.0, e: ~
+Episode: 489/1280, Score: 390.0, e: ~
+Episode: 490/1280, Score: 790.0, e: ~
+Episode: 491/1280, Score: 1890.0, e: ~
+Episode: 492/1280, Score: 1190.0, e: ~
+Episode: 493/1280, Score: 390.0, e: ~
+Episode: 494/1280, Score: 390.0, e: ~
+Episode: 495/1280, Score: 390.0, e: ~
+Episode: 496/1280, Score: 1990.0, e: ~
+Episode: 497/1280, Score: 690.0, e: ~
+Episode: 498/1280, Score: 190.0, e: ~
+Episode: 499/1280, Score: 390.0, e: ~
+Episode: 500/1280, Score: 390.0, e: ~
+Episode: 501/1280, Score: 690.0, e: ~
+Episode: 502/1280, Score: 390.0, e: ~
+Episode: 503/1280, Score: 290.0, e: ~
+Episode: 504/1280, Score: 290.0, e: ~
+Episode: 505/1280, Score: 290.0, e: ~
+Episode: 506/1280, Score: 190.0, e: ~
+Episode: 507/1280, Score: 190.0, e: ~
+Episode: 508/1280, Score: 490.0, e: ~
+Episode: 509/1280, Score: 690.0, e: ~
+Episode: 510/1280, Score: 190.0, e: ~
+Episode: 511/1280, Score: 1990.0, e: ~
+Episode: 512/1280, Score: 390.0, e: ~
+Finished batch: 16/40
+Mean: 561.875 | Median: 390.0
+
+Episode: 513/1280, Score: 290.0, e: ~
+Episode: 514/1280, Score: 390.0, e: ~
+Episode: 515/1280, Score: 390.0, e: ~
+Episode: 516/1280, Score: 2290.0, e: ~
+Episode: 517/1280, Score: 190.0, e: ~
+Episode: 518/1280, Score: 290.0, e: ~
+Episode: 519/1280, Score: 190.0, e: ~
+Episode: 520/1280, Score: 2090.0, e: ~
+Episode: 521/1280, Score: 190.0, e: ~
+Episode: 522/1280, Score: 290.0, e: ~
+Episode: 523/1280, Score: 490.0, e: ~
+Episode: 524/1280, Score: 490.0, e: ~
+Episode: 525/1280, Score: 490.0, e: ~
+Episode: 526/1280, Score: 1090.0, e: ~
+Episode: 527/1280, Score: 190.0, e: ~
+Episode: 528/1280, Score: 1290.0, e: ~
+Episode: 529/1280, Score: 590.0, e: ~
+Episode: 530/1280, Score: 290.0, e: ~
+Episode: 531/1280, Score: 190.0, e: ~
+Episode: 532/1280, Score: 190.0, e: ~
+Episode: 533/1280, Score: 1590.0, e: ~
+Episode: 534/1280, Score: 1490.0, e: ~
+Episode: 535/1280, Score: 590.0, e: ~
+Episode: 536/1280, Score: 390.0, e: ~
+Episode: 537/1280, Score: 290.0, e: ~
+Episode: 538/1280, Score: 190.0, e: ~
+Episode: 539/1280, Score: 290.0, e: ~
+Episode: 540/1280, Score: -10.0, e: ~
+Episode: 541/1280, Score: 290.0, e: ~
+Episode: 542/1280, Score: 290.0, e: ~
+Episode: 543/1280, Score: 190.0, e: ~
+Episode: 544/1280, Score: 290.0, e: ~
+Finished batch: 17/40
+Mean: 555.625 | Median: 290.0
+
+Episode: 545/1280, Score: 190.0, e: ~
+Episode: 546/1280, Score: 290.0, e: ~
+Episode: 547/1280, Score: 290.0, e: ~
+Episode: 548/1280, Score: 1990.0, e: ~
+Episode: 549/1280, Score: 390.0, e: ~
+Episode: 550/1280, Score: 1590.0, e: ~
+Episode: 551/1280, Score: 290.0, e: ~
+Episode: 552/1280, Score: 490.0, e: ~
+Episode: 553/1280, Score: 1090.0, e: ~
+Episode: 554/1280, Score: 290.0, e: ~
+Episode: 555/1280, Score: 890.0, e: ~
+Episode: 556/1280, Score: 690.0, e: ~
+Episode: 557/1280, Score: 590.0, e: ~
+Episode: 558/1280, Score: 590.0, e: ~
+Episode: 559/1280, Score: 190.0, e: ~
+Episode: 560/1280, Score: -10.0, e: ~
+Episode: 561/1280, Score: 290.0, e: ~
+Episode: 562/1280, Score: 290.0, e: ~
+Episode: 563/1280, Score: 290.0, e: ~
+Episode: 564/1280, Score: 190.0, e: ~
+Episode: 565/1280, Score: 1090.0, e: ~
+Episode: 566/1280, Score: 290.0, e: ~
+Episode: 567/1280, Score: 290.0, e: ~
+Episode: 568/1280, Score: 290.0, e: ~
+Episode: 569/1280, Score: 490.0, e: ~
+Episode: 570/1280, Score: 190.0, e: ~
+Episode: 571/1280, Score: 490.0, e: ~
+Episode: 572/1280, Score: 290.0, e: ~
+Episode: 573/1280, Score: 290.0, e: ~
+Episode: 574/1280, Score: 290.0, e: ~
+Episode: 575/1280, Score: 290.0, e: ~
+Episode: 576/1280, Score: 190.0, e: ~
+Finished batch: 18/40
+Mean: 480.625 | Median: 290.0
+
+Episode: 577/1280, Score: 390.0, e: ~
+Episode: 578/1280, Score: 790.0, e: ~
+Episode: 579/1280, Score: 190.0, e: ~
+Episode: 580/1280, Score: 1490.0, e: ~
+Episode: 581/1280, Score: 190.0, e: ~
+Episode: 582/1280, Score: 990.0, e: ~
+Episode: 583/1280, Score: 890.0, e: ~
+Episode: 584/1280, Score: 590.0, e: ~
+Episode: 585/1280, Score: 290.0, e: ~
+Episode: 586/1280, Score: 990.0, e: ~
+Episode: 587/1280, Score: 90.0, e: ~
+Episode: 588/1280, Score: 90.0, e: ~
+Episode: 589/1280, Score: 1090.0, e: ~
+Episode: 590/1280, Score: 1490.0, e: ~
+Episode: 591/1280, Score: 1390.0, e: ~
+Episode: 592/1280, Score: 190.0, e: ~
+Episode: 593/1280, Score: 890.0, e: ~
+Episode: 594/1280, Score: 290.0, e: ~
+Episode: 595/1280, Score: 390.0, e: ~
+Episode: 596/1280, Score: 590.0, e: ~
+Episode: 597/1280, Score: 290.0, e: ~
+Episode: 598/1280, Score: 390.0, e: ~
+Episode: 599/1280, Score: 490.0, e: ~
+Episode: 600/1280, Score: 390.0, e: ~
+Episode: 601/1280, Score: 190.0, e: ~
+Episode: 602/1280, Score: 490.0, e: ~
+Episode: 603/1280, Score: 490.0, e: ~
+Episode: 604/1280, Score: 590.0, e: ~
+Episode: 605/1280, Score: 390.0, e: ~
+Episode: 606/1280, Score: 390.0, e: ~
+Episode: 607/1280, Score: 290.0, e: ~
+Episode: 608/1280, Score: 190.0, e: ~
+Finished batch: 19/40
+Mean: 558.75 | Median: 390.0
+
+Episode: 609/1280, Score: 490.0, e: ~
+Episode: 610/1280, Score: 190.0, e: ~
+Episode: 611/1280, Score: 1090.0, e: ~
+Episode: 612/1280, Score: 290.0, e: ~
+Episode: 613/1280, Score: 1190.0, e: ~
+Episode: 614/1280, Score: 390.0, e: ~
+Episode: 615/1280, Score: 390.0, e: ~
+Episode: 616/1280, Score: 190.0, e: ~
+Episode: 617/1280, Score: 990.0, e: ~
+Episode: 618/1280, Score: 290.0, e: ~
+Episode: 619/1280, Score: 490.0, e: ~
+Episode: 620/1280, Score: 690.0, e: ~
+Episode: 621/1280, Score: 290.0, e: ~
+Episode: 622/1280, Score: 690.0, e: ~
+Episode: 623/1280, Score: 390.0, e: ~
+Episode: 624/1280, Score: 290.0, e: ~
+Episode: 625/1280, Score: 490.0, e: ~
+Episode: 626/1280, Score: 290.0, e: ~
+Episode: 627/1280, Score: 390.0, e: ~
+Episode: 628/1280, Score: 390.0, e: ~
+Episode: 629/1280, Score: 290.0, e: ~
+Episode: 630/1280, Score: 390.0, e: ~
+Episode: 631/1280, Score: 290.0, e: ~
+Episode: 632/1280, Score: 1590.0, e: ~
+Episode: 633/1280, Score: 1090.0, e: ~
+Episode: 634/1280, Score: 290.0, e: ~
+Episode: 635/1280, Score: 490.0, e: ~
+Episode: 636/1280, Score: 90.0, e: ~
+Episode: 637/1280, Score: 190.0, e: ~
+Episode: 638/1280, Score: 990.0, e: ~
+Episode: 639/1280, Score: 290.0, e: ~
+Episode: 640/1280, Score: 290.0, e: ~
+Finished batch: 20/40
+Mean: 505.625 | Median: 390.0
+
+Episode: 641/1280, Score: 190.0, e: ~
+Episode: 642/1280, Score: 90.0, e: ~
+Episode: 643/1280, Score: 390.0, e: ~
+Episode: 644/1280, Score: 190.0, e: ~
+Episode: 645/1280, Score: 490.0, e: ~
+Episode: 646/1280, Score: 1890.0, e: ~
+Episode: 647/1280, Score: 290.0, e: ~
+Episode: 648/1280, Score: 490.0, e: ~
+Episode: 649/1280, Score: 390.0, e: ~
+Episode: 650/1280, Score: 290.0, e: ~
+Episode: 651/1280, Score: 190.0, e: ~
+Episode: 652/1280, Score: 890.0, e: ~
+Episode: 653/1280, Score: 490.0, e: ~
+Episode: 654/1280, Score: 290.0, e: ~
+Episode: 655/1280, Score: 190.0, e: ~
+Episode: 656/1280, Score: 290.0, e: ~
+Episode: 657/1280, Score: 490.0, e: ~
+Episode: 658/1280, Score: 490.0, e: ~
+Episode: 659/1280, Score: 190.0, e: ~
+Episode: 660/1280, Score: 290.0, e: ~
+Episode: 661/1280, Score: 390.0, e: ~
+Episode: 662/1280, Score: -110.0, e: ~
+Episode: 663/1280, Score: 390.0, e: ~
+Episode: 664/1280, Score: 1190.0, e: ~
+Episode: 665/1280, Score: 390.0, e: ~
+Episode: 666/1280, Score: 690.0, e: ~
+Episode: 667/1280, Score: 390.0, e: ~
+Episode: 668/1280, Score: 390.0, e: ~
+Episode: 669/1280, Score: 390.0, e: ~
+Episode: 670/1280, Score: 290.0, e: ~
+Episode: 671/1280, Score: 490.0, e: ~
+Episode: 672/1280, Score: 290.0, e: ~
+Finished batch: 21/40
+Mean: 427.5 | Median: 390.0
+
+Episode: 673/1280, Score: 290.0, e: ~
+Episode: 674/1280, Score: 290.0, e: ~
+Episode: 675/1280, Score: -110.0, e: ~
+Episode: 676/1280, Score: 290.0, e: ~
+Episode: 677/1280, Score: 290.0, e: ~
+Episode: 678/1280, Score: 290.0, e: ~
+Episode: 679/1280, Score: 2090.0, e: ~
+Episode: 680/1280, Score: 290.0, e: ~
+Episode: 681/1280, Score: 390.0, e: ~
+Episode: 682/1280, Score: 1190.0, e: ~
+Episode: 683/1280, Score: 190.0, e: ~
+Episode: 684/1280, Score: 190.0, e: ~
+Episode: 685/1280, Score: 290.0, e: ~
+Episode: 686/1280, Score: 490.0, e: ~
+Episode: 687/1280, Score: 2590.0, e: ~
+Episode: 688/1280, Score: 990.0, e: ~
+Episode: 689/1280, Score: 2090.0, e: ~
+Episode: 690/1280, Score: 490.0, e: ~
+Episode: 691/1280, Score: 390.0, e: ~
+Episode: 692/1280, Score: 590.0, e: ~
+Episode: 693/1280, Score: 190.0, e: ~
+Episode: 694/1280, Score: 2090.0, e: ~
+Episode: 695/1280, Score: 390.0, e: ~
+Episode: 696/1280, Score: 790.0, e: ~
+Episode: 697/1280, Score: 290.0, e: ~
+Episode: 698/1280, Score: 290.0, e: ~
+Episode: 699/1280, Score: 790.0, e: ~
+Episode: 700/1280, Score: 590.0, e: ~
+Episode: 701/1280, Score: 190.0, e: ~
+Episode: 702/1280, Score: 190.0, e: ~
+Episode: 703/1280, Score: 590.0, e: ~
+Episode: 704/1280, Score: 490.0, e: ~
+Finished batch: 22/40
+Mean: 640.0 | Median: 390.0
+
+Episode: 705/1280, Score: 90.0, e: ~
+Episode: 706/1280, Score: 490.0, e: ~
+Episode: 707/1280, Score: 290.0, e: ~
+Episode: 708/1280, Score: 690.0, e: ~
+Episode: 709/1280, Score: 190.0, e: ~
+Episode: 710/1280, Score: 290.0, e: ~
+Episode: 711/1280, Score: 790.0, e: ~
+Episode: 712/1280, Score: 290.0, e: ~
+Episode: 713/1280, Score: 190.0, e: ~
+Episode: 714/1280, Score: 490.0, e: ~
+Episode: 715/1280, Score: 490.0, e: ~
+Episode: 716/1280, Score: 390.0, e: ~
+Episode: 717/1280, Score: 590.0, e: ~
+Episode: 718/1280, Score: 490.0, e: ~
+Episode: 719/1280, Score: 390.0, e: ~
+Episode: 720/1280, Score: 590.0, e: ~
+Episode: 721/1280, Score: 1690.0, e: ~
+Episode: 722/1280, Score: 390.0, e: ~
+Episode: 723/1280, Score: 290.0, e: ~
+Episode: 724/1280, Score: 290.0, e: ~
+Episode: 725/1280, Score: 290.0, e: ~
+Episode: 726/1280, Score: 390.0, e: ~
+Episode: 727/1280, Score: 190.0, e: ~
+Episode: 728/1280, Score: 290.0, e: ~
+Episode: 729/1280, Score: 490.0, e: ~
+Episode: 730/1280, Score: 190.0, e: ~
+Episode: 731/1280, Score: 190.0, e: ~
+Episode: 732/1280, Score: 290.0, e: ~
+Episode: 733/1280, Score: 290.0, e: ~
+Episode: 734/1280, Score: 1890.0, e: ~
+Episode: 735/1280, Score: 390.0, e: ~
+Episode: 736/1280, Score: 490.0, e: ~
+Finished batch: 23/40
+Mean: 461.875 | Median: 390.0
+
+Episode: 737/1280, Score: 290.0, e: ~
+Episode: 738/1280, Score: 590.0, e: ~
+Episode: 739/1280, Score: 190.0, e: ~
+Episode: 740/1280, Score: 290.0, e: ~
+Episode: 741/1280, Score: 290.0, e: ~
+Episode: 742/1280, Score: 490.0, e: ~
+Episode: 743/1280, Score: 390.0, e: ~
+Episode: 744/1280, Score: 290.0, e: ~
+Episode: 745/1280, Score: 390.0, e: ~
+Episode: 746/1280, Score: 590.0, e: ~
+Episode: 747/1280, Score: 290.0, e: ~
+Episode: 748/1280, Score: 390.0, e: ~
+Episode: 749/1280, Score: 390.0, e: ~
+Episode: 750/1280, Score: 690.0, e: ~
+Episode: 751/1280, Score: 490.0, e: ~
+Episode: 752/1280, Score: 990.0, e: ~
+Episode: 753/1280, Score: 490.0, e: ~
+Episode: 754/1280, Score: 1890.0, e: ~
+Episode: 755/1280, Score: 390.0, e: ~
+Episode: 756/1280, Score: 290.0, e: ~
+Episode: 757/1280, Score: 290.0, e: ~
+Episode: 758/1280, Score: 290.0, e: ~
+Episode: 759/1280, Score: 290.0, e: ~
+Episode: 760/1280, Score: 190.0, e: ~
+Episode: 761/1280, Score: 2090.0, e: ~
+Episode: 762/1280, Score: 390.0, e: ~
+Episode: 763/1280, Score: 290.0, e: ~
+Episode: 764/1280, Score: 690.0, e: ~
+Episode: 765/1280, Score: 390.0, e: ~
+Episode: 766/1280, Score: 290.0, e: ~
+Episode: 767/1280, Score: 190.0, e: ~
+Episode: 768/1280, Score: 290.0, e: ~
+Finished batch: 24/40
+Mean: 493.125 | Median: 390.0
+
+Episode: 769/1280, Score: 190.0, e: ~
+Episode: 770/1280, Score: 490.0, e: ~
+Episode: 771/1280, Score: 290.0, e: ~
+Episode: 772/1280, Score: 390.0, e: ~
+Episode: 773/1280, Score: 190.0, e: ~
+Episode: 774/1280, Score: 490.0, e: ~
+Episode: 775/1280, Score: 290.0, e: ~
+Episode: 776/1280, Score: 390.0, e: ~
+Episode: 777/1280, Score: 290.0, e: ~
+Episode: 778/1280, Score: 390.0, e: ~
+Episode: 779/1280, Score: 1490.0, e: ~
+Episode: 780/1280, Score: 390.0, e: ~
+Episode: 781/1280, Score: 2090.0, e: ~
+Episode: 782/1280, Score: 390.0, e: ~
+Episode: 783/1280, Score: 290.0, e: ~
+Episode: 784/1280, Score: 390.0, e: ~
+Episode: 785/1280, Score: 490.0, e: ~
+Episode: 786/1280, Score: 190.0, e: ~
+Episode: 787/1280, Score: 290.0, e: ~
+Episode: 788/1280, Score: 1090.0, e: ~
+Episode: 789/1280, Score: 290.0, e: ~
+Episode: 790/1280, Score: 290.0, e: ~
+Episode: 791/1280, Score: 490.0, e: ~
+Episode: 792/1280, Score: 1090.0, e: ~
+Episode: 793/1280, Score: 890.0, e: ~
+Episode: 794/1280, Score: 390.0, e: ~
+Episode: 795/1280, Score: 790.0, e: ~
+Episode: 796/1280, Score: 1390.0, e: ~
+Episode: 797/1280, Score: 90.0, e: ~
+Episode: 798/1280, Score: 290.0, e: ~
+Episode: 799/1280, Score: 190.0, e: ~
+Episode: 800/1280, Score: 490.0, e: ~
+Finished batch: 25/40
+Mean: 536.875 | Median: 390.0
+
+Episode: 801/1280, Score: 290.0, e: ~
+Episode: 802/1280, Score: 290.0, e: ~
+Episode: 803/1280, Score: 490.0, e: ~
+Episode: 804/1280, Score: 590.0, e: ~
+Episode: 805/1280, Score: 290.0, e: ~
+Episode: 806/1280, Score: 290.0, e: ~
+Episode: 807/1280, Score: 190.0, e: ~
+Episode: 808/1280, Score: 290.0, e: ~
+Episode: 809/1280, Score: 90.0, e: ~
+Episode: 810/1280, Score: 290.0, e: ~
+Episode: 811/1280, Score: 1790.0, e: ~
+Episode: 812/1280, Score: 990.0, e: ~
+Episode: 813/1280, Score: 190.0, e: ~
+Episode: 814/1280, Score: 190.0, e: ~
+Episode: 815/1280, Score: 390.0, e: ~
+Episode: 816/1280, Score: 2490.0, e: ~
+Episode: 817/1280, Score: 190.0, e: ~
+Episode: 818/1280, Score: 290.0, e: ~
+Episode: 819/1280, Score: 2090.0, e: ~
+Episode: 820/1280, Score: 290.0, e: ~
+Episode: 821/1280, Score: 290.0, e: ~
+Episode: 822/1280, Score: 590.0, e: ~
+Episode: 823/1280, Score: 390.0, e: ~
+Episode: 824/1280, Score: 190.0, e: ~
+Episode: 825/1280, Score: 1690.0, e: ~
+Episode: 826/1280, Score: 390.0, e: ~
+Episode: 827/1280, Score: 290.0, e: ~
+Episode: 828/1280, Score: 190.0, e: ~
+Episode: 829/1280, Score: 290.0, e: ~
+Episode: 830/1280, Score: 290.0, e: ~
+Episode: 831/1280, Score: 290.0, e: ~
+Episode: 832/1280, Score: 2190.0, e: ~
+Finished batch: 26/40
+Mean: 596.25 | Median: 290.0
+
+Episode: 833/1280, Score: 390.0, e: ~
+Episode: 834/1280, Score: 590.0, e: ~
+Episode: 835/1280, Score: 290.0, e: ~
+Episode: 836/1280, Score: 290.0, e: ~
+Episode: 837/1280, Score: 1190.0, e: ~
+Episode: 838/1280, Score: 90.0, e: ~
+Episode: 839/1280, Score: 1390.0, e: ~
+Episode: 840/1280, Score: 190.0, e: ~
+Episode: 841/1280, Score: 190.0, e: ~
+Episode: 842/1280, Score: 390.0, e: ~
+Episode: 843/1280, Score: 390.0, e: ~
+Episode: 844/1280, Score: 190.0, e: ~
+Episode: 845/1280, Score: 290.0, e: ~
+Episode: 846/1280, Score: 290.0, e: ~
+Episode: 847/1280, Score: 1690.0, e: ~
+Episode: 848/1280, Score: 490.0, e: ~
+Episode: 849/1280, Score: 490.0, e: ~
+Episode: 850/1280, Score: 390.0, e: ~
+Episode: 851/1280, Score: 290.0, e: ~
+Episode: 852/1280, Score: 990.0, e: ~
+Episode: 853/1280, Score: 390.0, e: ~
+Episode: 854/1280, Score: 490.0, e: ~
+Episode: 855/1280, Score: 990.0, e: ~
+Episode: 856/1280, Score: 390.0, e: ~
+Episode: 857/1280, Score: 490.0, e: ~
+Episode: 858/1280, Score: 290.0, e: ~
+Episode: 859/1280, Score: 290.0, e: ~
+Episode: 860/1280, Score: 190.0, e: ~
+Episode: 861/1280, Score: 190.0, e: ~
+Episode: 862/1280, Score: 290.0, e: ~
+Episode: 863/1280, Score: 290.0, e: ~
+Episode: 864/1280, Score: 290.0, e: ~
+Finished batch: 27/40
+Mean: 471.25 | Median: 340.0
+
+Episode: 865/1280, Score: 290.0, e: ~
+Episode: 866/1280, Score: 290.0, e: ~
+Episode: 867/1280, Score: 190.0, e: ~
+Episode: 868/1280, Score: 1190.0, e: ~
+Episode: 869/1280, Score: 290.0, e: ~
+Episode: 870/1280, Score: 290.0, e: ~
+Episode: 871/1280, Score: 290.0, e: ~
+Episode: 872/1280, Score: 190.0, e: ~
+Episode: 873/1280, Score: 490.0, e: ~
+Episode: 874/1280, Score: 390.0, e: ~
+Episode: 875/1280, Score: 790.0, e: ~
+Episode: 876/1280, Score: 290.0, e: ~
+Episode: 877/1280, Score: 590.0, e: ~
+Episode: 878/1280, Score: 290.0, e: ~
+Episode: 879/1280, Score: 1790.0, e: ~
+Episode: 880/1280, Score: 190.0, e: ~
+Episode: 881/1280, Score: 390.0, e: ~
+Episode: 882/1280, Score: 1990.0, e: ~
+Episode: 883/1280, Score: 290.0, e: ~
+Episode: 884/1280, Score: 290.0, e: ~
+Episode: 885/1280, Score: 490.0, e: ~
+Episode: 886/1280, Score: 190.0, e: ~
+Episode: 887/1280, Score: 490.0, e: ~
+Episode: 888/1280, Score: 490.0, e: ~
+Episode: 889/1280, Score: 390.0, e: ~
+Episode: 890/1280, Score: 790.0, e: ~
+Episode: 891/1280, Score: 190.0, e: ~
+Episode: 892/1280, Score: 290.0, e: ~
+Episode: 893/1280, Score: 290.0, e: ~
+Episode: 894/1280, Score: 290.0, e: ~
+Episode: 895/1280, Score: 290.0, e: ~
+Episode: 896/1280, Score: 290.0, e: ~
+Finished batch: 28/40
+Mean: 477.5 | Median: 290.0
+
+Episode: 897/1280, Score: 290.0, e: ~
+Episode: 898/1280, Score: 690.0, e: ~
+Episode: 899/1280, Score: 290.0, e: ~
+Episode: 900/1280, Score: 390.0, e: ~
+Episode: 901/1280, Score: 390.0, e: ~
+Episode: 902/1280, Score: 290.0, e: ~
+Episode: 903/1280, Score: 290.0, e: ~
+Episode: 904/1280, Score: 290.0, e: ~
+Episode: 905/1280, Score: 390.0, e: ~
+Episode: 906/1280, Score: 2190.0, e: ~
+Episode: 907/1280, Score: 2090.0, e: ~
+Episode: 908/1280, Score: 390.0, e: ~
+Episode: 909/1280, Score: 490.0, e: ~
+Episode: 910/1280, Score: 190.0, e: ~
+Episode: 911/1280, Score: 690.0, e: ~
+Episode: 912/1280, Score: 190.0, e: ~
+Episode: 913/1280, Score: 390.0, e: ~
+Episode: 914/1280, Score: 390.0, e: ~
+Episode: 915/1280, Score: 490.0, e: ~
+Episode: 916/1280, Score: 590.0, e: ~
+Episode: 917/1280, Score: 390.0, e: ~
+Episode: 918/1280, Score: 490.0, e: ~
+Episode: 919/1280, Score: 290.0, e: ~
+Episode: 920/1280, Score: 290.0, e: ~
+Episode: 921/1280, Score: 90.0, e: ~
+Episode: 922/1280, Score: 790.0, e: ~
+Episode: 923/1280, Score: 590.0, e: ~
+Episode: 924/1280, Score: 190.0, e: ~
+Episode: 925/1280, Score: 490.0, e: ~
+Episode: 926/1280, Score: 190.0, e: ~
+Episode: 927/1280, Score: 90.0, e: ~
+Episode: 928/1280, Score: 290.0, e: ~
+Finished batch: 29/40
+Mean: 486.875 | Median: 390.0
+
+Episode: 929/1280, Score: 1590.0, e: ~
+Episode: 930/1280, Score: 590.0, e: ~
+Episode: 931/1280, Score: 390.0, e: ~
+Episode: 932/1280, Score: 1990.0, e: ~
+Episode: 933/1280, Score: 290.0, e: ~
+Episode: 934/1280, Score: 290.0, e: ~
+Episode: 935/1280, Score: 190.0, e: ~
+Episode: 936/1280, Score: 290.0, e: ~
+Episode: 937/1280, Score: 290.0, e: ~
+Episode: 938/1280, Score: 490.0, e: ~
+Episode: 939/1280, Score: 590.0, e: ~
+Episode: 940/1280, Score: 1690.0, e: ~
+Episode: 941/1280, Score: 290.0, e: ~
+Episode: 942/1280, Score: 490.0, e: ~
+Episode: 943/1280, Score: 1890.0, e: ~
+Episode: 944/1280, Score: 290.0, e: ~
+Episode: 945/1280, Score: 90.0, e: ~
+Episode: 946/1280, Score: 190.0, e: ~
+Episode: 947/1280, Score: 90.0, e: ~
+Episode: 948/1280, Score: 290.0, e: ~
+Episode: 949/1280, Score: 490.0, e: ~
+Episode: 950/1280, Score: 390.0, e: ~
+Episode: 951/1280, Score: 290.0, e: ~
+Episode: 952/1280, Score: 290.0, e: ~
+Episode: 953/1280, Score: 390.0, e: ~
+Episode: 954/1280, Score: 590.0, e: ~
+Episode: 955/1280, Score: 1090.0, e: ~
+Episode: 956/1280, Score: 290.0, e: ~
+Episode: 957/1280, Score: 190.0, e: ~
+Episode: 958/1280, Score: 290.0, e: ~
+Episode: 959/1280, Score: 2090.0, e: ~
+Episode: 960/1280, Score: 2290.0, e: ~
+Finished batch: 30/40
+Mean: 655.625 | Median: 340.0
+
+Episode: 961/1280, Score: 290.0, e: ~
+Episode: 962/1280, Score: 490.0, e: ~
+Episode: 963/1280, Score: 290.0, e: ~
+Episode: 964/1280, Score: 290.0, e: ~
+Episode: 965/1280, Score: 390.0, e: ~
+Episode: 966/1280, Score: 190.0, e: ~
+Episode: 967/1280, Score: 1590.0, e: ~
+Episode: 968/1280, Score: 490.0, e: ~
+Episode: 969/1280, Score: 1990.0, e: ~
+Episode: 970/1280, Score: 1990.0, e: ~
+Episode: 971/1280, Score: 490.0, e: ~
+Episode: 972/1280, Score: 490.0, e: ~
+Episode: 973/1280, Score: 1690.0, e: ~
+Episode: 974/1280, Score: 290.0, e: ~
+Episode: 975/1280, Score: -10.0, e: ~
+Episode: 976/1280, Score: 290.0, e: ~
+Episode: 977/1280, Score: 290.0, e: ~
+Episode: 978/1280, Score: 290.0, e: ~
+Episode: 979/1280, Score: 390.0, e: ~
+Episode: 980/1280, Score: 1890.0, e: ~
+Episode: 981/1280, Score: 1590.0, e: ~
+Episode: 982/1280, Score: 490.0, e: ~
+Episode: 983/1280, Score: 390.0, e: ~
+Episode: 984/1280, Score: 290.0, e: ~
+Episode: 985/1280, Score: 390.0, e: ~
+Episode: 986/1280, Score: 190.0, e: ~
+Episode: 987/1280, Score: 290.0, e: ~
+Episode: 988/1280, Score: 1690.0, e: ~
+Episode: 989/1280, Score: 290.0, e: ~
+Episode: 990/1280, Score: 390.0, e: ~
+Episode: 991/1280, Score: 290.0, e: ~
+Episode: 992/1280, Score: 390.0, e: ~
+Finished batch: 31/40
+Mean: 649.375 | Median: 390.0
+
+Episode: 993/1280, Score: 190.0, e: ~
+Episode: 994/1280, Score: 590.0, e: ~
+Episode: 995/1280, Score: 290.0, e: ~
+Episode: 996/1280, Score: 490.0, e: ~
+Episode: 997/1280, Score: 290.0, e: ~
+Episode: 998/1280, Score: 190.0, e: ~
+Episode: 999/1280, Score: 190.0, e: ~
+Episode: 1000/1280, Score: 290.0, e: ~
+Episode: 1001/1280, Score: 290.0, e: ~
+Episode: 1002/1280, Score: 490.0, e: ~
+Episode: 1003/1280, Score: 290.0, e: ~
+Episode: 1004/1280, Score: 290.0, e: ~
+Episode: 1005/1280, Score: 1990.0, e: ~
+Episode: 1006/1280, Score: 290.0, e: ~
+Episode: 1007/1280, Score: 1690.0, e: ~
+Episode: 1008/1280, Score: 190.0, e: ~
+Episode: 1009/1280, Score: 290.0, e: ~
+Episode: 1010/1280, Score: 390.0, e: ~
+Episode: 1011/1280, Score: 190.0, e: ~
+Episode: 1012/1280, Score: 2390.0, e: ~
+Episode: 1013/1280, Score: 90.0, e: ~
+Episode: 1014/1280, Score: 290.0, e: ~
+Episode: 1015/1280, Score: 290.0, e: ~
+Episode: 1016/1280, Score: 390.0, e: ~
+Episode: 1017/1280, Score: 490.0, e: ~
+Episode: 1018/1280, Score: 1990.0, e: ~
+Episode: 1019/1280, Score: 490.0, e: ~
+Episode: 1020/1280, Score: 490.0, e: ~
+Episode: 1021/1280, Score: 690.0, e: ~
+Episode: 1022/1280, Score: -10.0, e: ~
+Episode: 1023/1280, Score: 190.0, e: ~
+Episode: 1024/1280, Score: 2290.0, e: ~
+Finished batch: 32/40
+Mean: 593.125 | Median: 290.0
+
+Episode: 1025/1280, Score: 290.0, e: ~
+Episode: 1026/1280, Score: 390.0, e: ~
+Episode: 1027/1280, Score: 390.0, e: ~
+Episode: 1028/1280, Score: 690.0, e: ~
+Episode: 1029/1280, Score: 390.0, e: ~
+Episode: 1030/1280, Score: 490.0, e: ~
+Episode: 1031/1280, Score: 1690.0, e: ~
+Episode: 1032/1280, Score: 690.0, e: ~
+Episode: 1033/1280, Score: 790.0, e: ~
+Episode: 1034/1280, Score: 590.0, e: ~
+Episode: 1035/1280, Score: 490.0, e: ~
+Episode: 1036/1280, Score: 390.0, e: ~
+Episode: 1037/1280, Score: 290.0, e: ~
+Episode: 1038/1280, Score: 590.0, e: ~
+Episode: 1039/1280, Score: 2090.0, e: ~
+Episode: 1040/1280, Score: 290.0, e: ~
+Episode: 1041/1280, Score: -10.0, e: ~
+Episode: 1042/1280, Score: 190.0, e: ~
+Episode: 1043/1280, Score: 490.0, e: ~
+Episode: 1044/1280, Score: 390.0, e: ~
+Episode: 1045/1280, Score: 390.0, e: ~
+Episode: 1046/1280, Score: 390.0, e: ~
+Episode: 1047/1280, Score: 390.0, e: ~
+Episode: 1048/1280, Score: 190.0, e: ~
+Episode: 1049/1280, Score: 190.0, e: ~
+Episode: 1050/1280, Score: 1590.0, e: ~
+Episode: 1051/1280, Score: 1490.0, e: ~
+Episode: 1052/1280, Score: 390.0, e: ~
+Episode: 1053/1280, Score: 2090.0, e: ~
+Episode: 1054/1280, Score: 190.0, e: ~
+Episode: 1055/1280, Score: 290.0, e: ~
+Episode: 1056/1280, Score: 190.0, e: ~
+Finished batch: 33/40
+Mean: 605.625 | Median: 390.0
+
+Episode: 1057/1280, Score: 390.0, e: ~
+Episode: 1058/1280, Score: 290.0, e: ~
+Episode: 1059/1280, Score: 1090.0, e: ~
+Episode: 1060/1280, Score: 590.0, e: ~
+Episode: 1061/1280, Score: 390.0, e: ~
+Episode: 1062/1280, Score: 190.0, e: ~
+Episode: 1063/1280, Score: 290.0, e: ~
+Episode: 1064/1280, Score: 490.0, e: ~
+Episode: 1065/1280, Score: 1190.0, e: ~
+Episode: 1066/1280, Score: 590.0, e: ~
+Episode: 1067/1280, Score: 190.0, e: ~
+Episode: 1068/1280, Score: 490.0, e: ~
+Episode: 1069/1280, Score: 1090.0, e: ~
+Episode: 1070/1280, Score: 390.0, e: ~
+Episode: 1071/1280, Score: 290.0, e: ~
+Episode: 1072/1280, Score: 290.0, e: ~
+Episode: 1073/1280, Score: 290.0, e: ~
+Episode: 1074/1280, Score: 290.0, e: ~
+Episode: 1075/1280, Score: 290.0, e: ~
+Episode: 1076/1280, Score: 390.0, e: ~
+Episode: 1077/1280, Score: 190.0, e: ~
+Episode: 1078/1280, Score: 190.0, e: ~
+Episode: 1079/1280, Score: 90.0, e: ~
+Episode: 1080/1280, Score: 190.0, e: ~
+Episode: 1081/1280, Score: -10.0, e: ~
+Episode: 1082/1280, Score: 390.0, e: ~
+Episode: 1083/1280, Score: 290.0, e: ~
+Episode: 1084/1280, Score: 1890.0, e: ~
+Episode: 1085/1280, Score: 1890.0, e: ~
+Episode: 1086/1280, Score: 490.0, e: ~
+Episode: 1087/1280, Score: 1790.0, e: ~
+Episode: 1088/1280, Score: 190.0, e: ~
+Finished batch: 34/40
+Mean: 533.75 | Median: 340.0
+
+Episode: 1089/1280, Score: 490.0, e: ~
+Episode: 1090/1280, Score: 1390.0, e: ~
+Episode: 1091/1280, Score: 390.0, e: ~
+Episode: 1092/1280, Score: 190.0, e: ~
+Episode: 1093/1280, Score: 290.0, e: ~
+Episode: 1094/1280, Score: 90.0, e: ~
+Episode: 1095/1280, Score: 2090.0, e: ~
+Episode: 1096/1280, Score: 190.0, e: ~
+Episode: 1097/1280, Score: 290.0, e: ~
+Episode: 1098/1280, Score: -110.0, e: ~
+Episode: 1099/1280, Score: 2290.0, e: ~
+Episode: 1100/1280, Score: 390.0, e: ~
+Episode: 1101/1280, Score: 290.0, e: ~
+Episode: 1102/1280, Score: 490.0, e: ~
+Episode: 1103/1280, Score: 390.0, e: ~
+Episode: 1104/1280, Score: 790.0, e: ~
+Episode: 1105/1280, Score: 1190.0, e: ~
+Episode: 1106/1280, Score: 190.0, e: ~
+Episode: 1107/1280, Score: 1290.0, e: ~
+Episode: 1108/1280, Score: 390.0, e: ~
+Episode: 1109/1280, Score: 290.0, e: ~
+Episode: 1110/1280, Score: 390.0, e: ~
+Episode: 1111/1280, Score: 790.0, e: ~
+Episode: 1112/1280, Score: 190.0, e: ~
+Episode: 1113/1280, Score: 1190.0, e: ~
+Episode: 1114/1280, Score: 90.0, e: ~
+Episode: 1115/1280, Score: 190.0, e: ~
+Episode: 1116/1280, Score: 390.0, e: ~
+Episode: 1117/1280, Score: 1790.0, e: ~
+Episode: 1118/1280, Score: 390.0, e: ~
+Episode: 1119/1280, Score: 490.0, e: ~
+Episode: 1120/1280, Score: 290.0, e: ~
+Finished batch: 35/40
+Mean: 608.75 | Median: 390.0
+
+Episode: 1121/1280, Score: 190.0, e: ~
+Episode: 1122/1280, Score: 190.0, e: ~
+Episode: 1123/1280, Score: 290.0, e: ~
+Episode: 1124/1280, Score: 190.0, e: ~
+Episode: 1125/1280, Score: 290.0, e: ~
+Episode: 1126/1280, Score: 390.0, e: ~
+Episode: 1127/1280, Score: 590.0, e: ~
+Episode: 1128/1280, Score: 590.0, e: ~
+Episode: 1129/1280, Score: 490.0, e: ~
+Episode: 1130/1280, Score: 190.0, e: ~
+Episode: 1131/1280, Score: 290.0, e: ~
+Episode: 1132/1280, Score: 290.0, e: ~
+Episode: 1133/1280, Score: 190.0, e: ~
+Episode: 1134/1280, Score: 290.0, e: ~
+Episode: 1135/1280, Score: 1790.0, e: ~
+Episode: 1136/1280, Score: 290.0, e: ~
+Episode: 1137/1280, Score: 1290.0, e: ~
+Episode: 1138/1280, Score: 390.0, e: ~
+Episode: 1139/1280, Score: 290.0, e: ~
+Episode: 1140/1280, Score: 290.0, e: ~
+Episode: 1141/1280, Score: 290.0, e: ~
+Episode: 1142/1280, Score: 90.0, e: ~
+Episode: 1143/1280, Score: 690.0, e: ~
+Episode: 1144/1280, Score: 390.0, e: ~
+Episode: 1145/1280, Score: 490.0, e: ~
+Episode: 1146/1280, Score: 390.0, e: ~
+Episode: 1147/1280, Score: 390.0, e: ~
+Episode: 1148/1280, Score: 290.0, e: ~
+Episode: 1149/1280, Score: 490.0, e: ~
+Episode: 1150/1280, Score: 290.0, e: ~
+Episode: 1151/1280, Score: 290.0, e: ~
+Episode: 1152/1280, Score: 290.0, e: ~
+Finished batch: 36/40
+Mean: 411.875 | Median: 290.0
+
+Episode: 1153/1280, Score: 190.0, e: ~
+Episode: 1154/1280, Score: 290.0, e: ~
+Episode: 1155/1280, Score: 1290.0, e: ~
+Episode: 1156/1280, Score: 190.0, e: ~
+Episode: 1157/1280, Score: 490.0, e: ~
+Episode: 1158/1280, Score: 290.0, e: ~
+Episode: 1159/1280, Score: 390.0, e: ~
+Episode: 1160/1280, Score: 190.0, e: ~
+Episode: 1161/1280, Score: 790.0, e: ~
+Episode: 1162/1280, Score: 1790.0, e: ~
+Episode: 1163/1280, Score: 490.0, e: ~
+Episode: 1164/1280, Score: 90.0, e: ~
+Episode: 1165/1280, Score: 190.0, e: ~
+Episode: 1166/1280, Score: 890.0, e: ~
+Episode: 1167/1280, Score: 190.0, e: ~
+Episode: 1168/1280, Score: 490.0, e: ~
+Episode: 1169/1280, Score: 190.0, e: ~
+Episode: 1170/1280, Score: 590.0, e: ~
+Episode: 1171/1280, Score: 90.0, e: ~
+Episode: 1172/1280, Score: 1390.0, e: ~
+Episode: 1173/1280, Score: 590.0, e: ~
+Episode: 1174/1280, Score: 290.0, e: ~
+Episode: 1175/1280, Score: 1790.0, e: ~
+Episode: 1176/1280, Score: 1490.0, e: ~
+Episode: 1177/1280, Score: 490.0, e: ~
+Episode: 1178/1280, Score: 490.0, e: ~
+Episode: 1179/1280, Score: 190.0, e: ~
+Episode: 1180/1280, Score: 190.0, e: ~
+Episode: 1181/1280, Score: 290.0, e: ~
+Episode: 1182/1280, Score: 190.0, e: ~
+Episode: 1183/1280, Score: 90.0, e: ~
+Episode: 1184/1280, Score: 1990.0, e: ~
+Finished batch: 37/40
+Mean: 580.625 | Median: 340.0
+
+Episode: 1185/1280, Score: 990.0, e: ~
+Episode: 1186/1280, Score: 690.0, e: ~
+Episode: 1187/1280, Score: 390.0, e: ~
+Episode: 1188/1280, Score: 290.0, e: ~
+Episode: 1189/1280, Score: 490.0, e: ~
+Episode: 1190/1280, Score: 1590.0, e: ~
+Episode: 1191/1280, Score: 290.0, e: ~
+Episode: 1192/1280, Score: 190.0, e: ~
+Episode: 1193/1280, Score: 190.0, e: ~
+Episode: 1194/1280, Score: 290.0, e: ~
+Episode: 1195/1280, Score: 290.0, e: ~
+Episode: 1196/1280, Score: 390.0, e: ~
+Episode: 1197/1280, Score: 390.0, e: ~
+Episode: 1198/1280, Score: 690.0, e: ~
+Episode: 1199/1280, Score: 390.0, e: ~
+Episode: 1200/1280, Score: 190.0, e: ~
+Episode: 1201/1280, Score: 290.0, e: ~
+Episode: 1202/1280, Score: 790.0, e: ~
+Episode: 1203/1280, Score: 690.0, e: ~
+Episode: 1204/1280, Score: 190.0, e: ~
+Episode: 1205/1280, Score: 590.0, e: ~
+Episode: 1206/1280, Score: 390.0, e: ~
+Episode: 1207/1280, Score: 290.0, e: ~
+Episode: 1208/1280, Score: 190.0, e: ~
+Episode: 1209/1280, Score: 290.0, e: ~
+Episode: 1210/1280, Score: 190.0, e: ~
+Episode: 1211/1280, Score: 90.0, e: ~
+Episode: 1212/1280, Score: 1090.0, e: ~
+Episode: 1213/1280, Score: 390.0, e: ~
+Episode: 1214/1280, Score: 390.0, e: ~
+Episode: 1215/1280, Score: 190.0, e: ~
+Episode: 1216/1280, Score: 290.0, e: ~
+Finished batch: 38/40
+Mean: 440.0 | Median: 340.0
+
+Episode: 1217/1280, Score: 1490.0, e: ~
+Episode: 1218/1280, Score: -110.0, e: ~
+Episode: 1219/1280, Score: 290.0, e: ~
+Episode: 1220/1280, Score: 390.0, e: ~
+Episode: 1221/1280, Score: 690.0, e: ~
+Episode: 1222/1280, Score: 290.0, e: ~
+Episode: 1223/1280, Score: 390.0, e: ~
+Episode: 1224/1280, Score: 390.0, e: ~
+Episode: 1225/1280, Score: 290.0, e: ~
+Episode: 1226/1280, Score: 490.0, e: ~
+Episode: 1227/1280, Score: 290.0, e: ~
+Episode: 1228/1280, Score: 90.0, e: ~
+Episode: 1229/1280, Score: 290.0, e: ~
+Episode: 1230/1280, Score: 690.0, e: ~
+Episode: 1231/1280, Score: 790.0, e: ~
+Episode: 1232/1280, Score: 390.0, e: ~
+Episode: 1233/1280, Score: 290.0, e: ~
+Episode: 1234/1280, Score: 290.0, e: ~
+Episode: 1235/1280, Score: 290.0, e: ~
+Episode: 1236/1280, Score: 490.0, e: ~
+Episode: 1237/1280, Score: 190.0, e: ~
+Episode: 1238/1280, Score: 590.0, e: ~
+Episode: 1239/1280, Score: 890.0, e: ~
+Episode: 1240/1280, Score: 490.0, e: ~
+Episode: 1241/1280, Score: 490.0, e: ~
+Episode: 1242/1280, Score: 390.0, e: ~
+Episode: 1243/1280, Score: 290.0, e: ~
+Episode: 1244/1280, Score: 390.0, e: ~
+Episode: 1245/1280, Score: 290.0, e: ~
+Episode: 1246/1280, Score: 1690.0, e: ~
+Episode: 1247/1280, Score: 290.0, e: ~
+Episode: 1248/1280, Score: 490.0, e: ~
+Finished batch: 39/40
+Mean: 468.125 | Median: 390.0
+
+Episode: 1249/1280, Score: 490.0, e: ~
+Episode: 1250/1280, Score: 1390.0, e: ~
+Episode: 1251/1280, Score: 490.0, e: ~
+Episode: 1252/1280, Score: 290.0, e: ~
+Episode: 1253/1280, Score: 490.0, e: ~
+Episode: 1254/1280, Score: 290.0, e: ~
+Episode: 1255/1280, Score: 490.0, e: ~
+Episode: 1256/1280, Score: 190.0, e: ~
+Episode: 1257/1280, Score: 290.0, e: ~
+Episode: 1258/1280, Score: 490.0, e: ~
+Episode: 1259/1280, Score: 790.0, e: ~
+Episode: 1260/1280, Score: 290.0, e: ~
+Episode: 1261/1280, Score: 390.0, e: ~
+Episode: 1262/1280, Score: 790.0, e: ~
+Episode: 1263/1280, Score: 290.0, e: ~
+Episode: 1264/1280, Score: 490.0, e: ~
+Episode: 1265/1280, Score: 790.0, e: ~
+Episode: 1266/1280, Score: 290.0, e: ~
+Episode: 1267/1280, Score: 290.0, e: ~
+Episode: 1268/1280, Score: 290.0, e: ~
+Episode: 1269/1280, Score: 690.0, e: ~
+Episode: 1270/1280, Score: 290.0, e: ~
+Episode: 1271/1280, Score: 1690.0, e: ~
+Episode: 1272/1280, Score: 190.0, e: ~
+Episode: 1273/1280, Score: 290.0, e: ~
+Episode: 1274/1280, Score: 590.0, e: ~
+Episode: 1275/1280, Score: 790.0, e: ~
+Episode: 1276/1280, Score: 390.0, e: ~
+Episode: 1277/1280, Score: 1990.0, e: ~
+Episode: 1278/1280, Score: 690.0, e: ~
+Episode: 1279/1280, Score: 190.0, e: ~
+Episode: 1280/1280, Score: 1990.0, e: ~
+Finished batch: 40/40
+Mean: 605.625 | Median: 490.0
+
+
+
+Finished all batches:
+
+| Batch#:0 | Mean:15980.0 | Median:15980.0 | Episodes:15980.0 |
+| Batch#:1 | Mean:20580.0 | Median:20580.0 | Episodes:20580.0 |
+| Batch#:2 | Mean:18880.0 | Median:18880.0 | Episodes:18880.0 |
+| Batch#:3 | Mean:16280.0 | Median:16280.0 | Episodes:16280.0 |
+| Batch#:4 | Mean:14080.0 | Median:14080.0 | Episodes:14080.0 |
+| Batch#:5 | Mean:20180.0 | Median:20180.0 | Episodes:20180.0 |
+| Batch#:6 | Mean:15280.0 | Median:15280.0 | Episodes:15280.0 |
+| Batch#:7 | Mean:11780.0 | Median:11780.0 | Episodes:11780.0 |
+| Batch#:8 | Mean:15880.0 | Median:15880.0 | Episodes:15880.0 |
+| Batch#:9 | Mean:15480.0 | Median:15480.0 | Episodes:15480.0 |
+| Batch#:10 | Mean:16980.0 | Median:16980.0 | Episodes:16980.0 |
+| Batch#:11 | Mean:13280.0 | Median:13280.0 | Episodes:13280.0 |
+| Batch#:12 | Mean:14280.0 | Median:14280.0 | Episodes:14280.0 |
+| Batch#:13 | Mean:13780.0 | Median:13780.0 | Episodes:13780.0 |
+| Batch#:14 | Mean:17280.0 | Median:17280.0 | Episodes:17280.0 |
+| Batch#:15 | Mean:17980.0 | Median:17980.0 | Episodes:17980.0 |
+| Batch#:16 | Mean:17780.0 | Median:17780.0 | Episodes:17780.0 |
+| Batch#:17 | Mean:15380.0 | Median:15380.0 | Episodes:15380.0 |
+| Batch#:18 | Mean:17880.0 | Median:17880.0 | Episodes:17880.0 |
+| Batch#:19 | Mean:16180.0 | Median:16180.0 | Episodes:16180.0 |
+| Batch#:20 | Mean:13680.0 | Median:13680.0 | Episodes:13680.0 |
+| Batch#:21 | Mean:20480.0 | Median:20480.0 | Episodes:20480.0 |
+| Batch#:22 | Mean:14780.0 | Median:14780.0 | Episodes:14780.0 |
+| Batch#:23 | Mean:15780.0 | Median:15780.0 | Episodes:15780.0 |
+| Batch#:24 | Mean:17180.0 | Median:17180.0 | Episodes:17180.0 |
+| Batch#:25 | Mean:19080.0 | Median:19080.0 | Episodes:19080.0 |
+| Batch#:26 | Mean:15080.0 | Median:15080.0 | Episodes:15080.0 |
+| Batch#:27 | Mean:15280.0 | Median:15280.0 | Episodes:15280.0 |
+| Batch#:28 | Mean:15580.0 | Median:15580.0 | Episodes:15580.0 |
+| Batch#:29 | Mean:20980.0 | Median:20980.0 | Episodes:20980.0 |
+| Batch#:30 | Mean:20780.0 | Median:20780.0 | Episodes:20780.0 |
+| Batch#:31 | Mean:18980.0 | Median:18980.0 | Episodes:18980.0 |
+| Batch#:32 | Mean:19380.0 | Median:19380.0 | Episodes:19380.0 |
+| Batch#:33 | Mean:17080.0 | Median:17080.0 | Episodes:17080.0 |
+| Batch#:34 | Mean:19480.0 | Median:19480.0 | Episodes:19480.0 |
+| Batch#:35 | Mean:13180.0 | Median:13180.0 | Episodes:13180.0 |
+| Batch#:36 | Mean:18580.0 | Median:18580.0 | Episodes:18580.0 |
+| Batch#:37 | Mean:14080.0 | Median:14080.0 | Episodes:14080.0 |
+| Batch#:38 | Mean:14980.0 | Median:14980.0 | Episodes:14980.0 |
+| Batch#:39 | Mean:19380.0 | Median:19380.0 | Episodes:19380.0 |
+

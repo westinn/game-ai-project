@@ -4,4 +4,5 @@ pip install scipy;
 pip install pillow;
 pip install keras;
 pip install tensorflow;
+pip install h5py;
 cd ../..;

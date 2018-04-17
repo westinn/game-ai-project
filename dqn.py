@@ -32,6 +32,9 @@ class DQNAgent:
 
         self.batch_size = 32
 
+        # set input shape order
+        K.set_image_dim_ordering('th')
+
         self.dummy_input = numpy.zeros((1, self.action_size))
         self.dummy_batch = numpy.zeros((self.batch_size, self.action_size))
 
@@ -41,8 +44,6 @@ class DQNAgent:
         self.epsilon_decay = 0.995
         self.learning_rate = 0.001
 
-        # TODO
-        # double check this
         self.opt = RMSprop(lr=self.learning_rate, rho=0.99, decay=0.0, epsilon=1e-8)
 
         # Can hold up to 2000 states at a time
@@ -60,9 +61,8 @@ class DQNAgent:
 
     # Neural Net for Deep-Q learning Model
     def _build_model(self):
-        # 1st Conv2D after inputs
         # 84x84 pixel input with 4 frames with 4 stride
-        input_shape = Input(shape=(self.width, self.height, self.state_length))
+        input_shape = Input(shape=(self.state_length, self.width, self.height))
         action = Input(shape=(self.action_size,))
 
         conv1 = Conv2D(32, (8, 8), strides=(4, 4), activation='relu')(input_shape)
@@ -73,11 +73,10 @@ class DQNAgent:
         hidden = Dense(512)(flat)
         lrelu = LeakyReLU()(hidden)
         q_value_prediction = Dense(self.action_size)(lrelu)
-
-        select_q_value_of_action = Multiply()([q_value_prediction, action])
+        q_value_action = Multiply()([q_value_prediction, action])
 
         target_q_value = Lambda(lambda x: K.sum(x, axis=-1, keepdims=True),
-                                output_shape=lambda_out_shape)(select_q_value_of_action)
+                                output_shape=lambda_out_shape)(q_value_action)
 
         model = Model(inputs=[input_shape, action], outputs=[q_value_prediction, target_q_value])
 
@@ -85,33 +84,38 @@ class DQNAgent:
 
         return model
 
-    def learn(self, last_state, action, reward, next_state, done, frame_number):
+    def learn(self, last_state, action, reward, done, next_state, frame_number):
         # save state
         self.memory.append((last_state, action, reward, next_state, done))
 
         if len(self.memory) > self.deque_len:
             self.memory.popleft()
 
-        if frame_number >= self.initial_replay_size:
-            if frame_number % 4 == 0:
-                self.train()
+        if not done:
+            if frame_number >= self.batch_size:
+                if frame_number % 4 == 0:
+                    self.train()
 
             if frame_number % self.target_update_interval == 0:
                 self.target_network.set_weights(self.model.get_weights())
 
-            save_interval = 300000
+            save_interval = 10000
             if frame_number % save_interval == 0:
-                # TODO
-                print('Save network.')
-        # return the max q
-        # np.max(self.model.predict([np.expand_dims(last_state, axis=0), self.dummy_input])[0])
+                self.save_network("frame_num_{}".format(frame_number))
+
         return
 
     def act(self, state):
         if numpy.random.rand() <= self.epsilon:
             return random.randrange(self.action_size)
-        act_values = self.model.predict(state)
-        return numpy.argmax(act_values[0])  # returns action
+        action = numpy.argmax(self.model.predict([numpy.expand_dims(state, axis=0), self.dummy_input])[0])
+        return action
+
+    def test_act(self, state):
+        # if numpy.random.rand() <= .1:
+        #     return random.randrange(self.action_size)
+        action = numpy.argmax(self.model.predict([numpy.expand_dims(state, axis=0), self.dummy_input])[0])
+        return action
 
     def train(self):
         state_batch = []
@@ -131,8 +135,7 @@ class DQNAgent:
 
         done_batch = numpy.array(done_batch) + 0
         # Q value from target network
-        print('Prediction time')
-        print(list2np(next_state_batch))
+        # debuging
         target_q_values_batch = self.target_network.predict([list2np(next_state_batch), self.dummy_batch])[0]
 
         y_batch = reward_batch + (1 - done_batch) * self.gamma * numpy.max(target_q_values_batch, axis=-1)
@@ -152,3 +155,7 @@ class DQNAgent:
 
     def save(self, name):
         self.model.save_weights(name)
+
+    def save_network(self, name):
+        self.model.save("saved_networks/kong_" + str(name)+'.h5')
+        print('Saved network.')

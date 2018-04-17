@@ -1,0 +1,844 @@
+=====================================================================================
+Game ROM: ClassicKong-v0
+State Size: 7056
+Action Size: 8
+
+# of Episodes: 1280
+# of Batches: 40
+Batch Size: 32
+=====================================================================================
+
+2018-04-17 06:35:03.332120: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+Saved network.
+Episode: 1/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 2/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 3/1280, Score: 90.0, e: ~
+Saved network.
+Episode: 4/1280, Score: 1590.0, e: ~
+Saved network.
+Episode: 5/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 6/1280, Score: 1490.0, e: ~
+Saved network.
+Episode: 7/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 8/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 9/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 10/1280, Score: 3290.0, e: ~
+Saved network.
+Episode: 11/1280, Score: 2290.0, e: ~
+Saved network.
+Episode: 12/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 13/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 14/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 15/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 16/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 17/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 18/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 19/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 20/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 21/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 22/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 23/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 24/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 25/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 26/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 27/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 28/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 29/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 30/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 31/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 32/1280, Score: 290.0, e: ~
+Finished batch: 1/40
+Mean: 1136.875 | Median: 290.0
+
+Saved network.
+Saved network.
+Episode: 33/1280, Score: 3590.0, e: ~
+Saved network.
+Episode: 34/1280, Score: 3390.0, e: ~
+Saved network.
+Episode: 35/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 36/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 37/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 38/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 39/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 40/1280, Score: 1990.0, e: ~
+Saved network.
+Episode: 41/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 42/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 43/1280, Score: 3490.0, e: ~
+Saved network.
+Episode: 44/1280, Score: 4290.0, e: ~
+Saved network.
+Episode: 45/1280, Score: 1990.0, e: ~
+Saved network.
+Episode: 46/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 47/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 48/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 49/1280, Score: 2690.0, e: ~
+Saved network.
+Episode: 50/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 51/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 52/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 53/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 54/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 55/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 56/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 57/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 58/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 59/1280, Score: 590.0, e: ~
+Saved network.
+Episode: 60/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 61/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 62/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 63/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 64/1280, Score: 490.0, e: ~
+Finished batch: 2/40
+Mean: 2236.875 | Median: 1290.0
+
+Saved network.
+Saved network.
+Episode: 65/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 66/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 67/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 68/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 69/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 70/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 71/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 72/1280, Score: 3790.0, e: ~
+Saved network.
+Episode: 73/1280, Score: 2690.0, e: ~
+Saved network.
+Episode: 74/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 75/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 76/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 77/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 78/1280, Score: 590.0, e: ~
+Saved network.
+Episode: 79/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 80/1280, Score: 390.0, e: ~
+Saved network.
+Episode: 81/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 82/1280, Score: 390.0, e: ~
+Saved network.
+Episode: 83/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 84/1280, Score: 1790.0, e: ~
+Saved network.
+Episode: 85/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 86/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 87/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 88/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 89/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 90/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 91/1280, Score: 3490.0, e: ~
+Saved network.
+Episode: 92/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 93/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 94/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 95/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 96/1280, Score: 290.0, e: ~
+Finished batch: 3/40
+Mean: 1143.125 | Median: 490.0
+
+Saved network.
+Saved network.
+Episode: 97/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 98/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 99/1280, Score: 390.0, e: ~
+Saved network.
+Episode: 100/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 101/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 102/1280, Score: 4790.0, e: ~
+Saved network.
+Episode: 103/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 104/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 105/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 106/1280, Score: 890.0, e: ~
+Saved network.
+Episode: 107/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 108/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 109/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 110/1280, Score: 990.0, e: ~
+Saved network.
+Episode: 111/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 112/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 113/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 114/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 115/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 116/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 117/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 118/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 119/1280, Score: 1890.0, e: ~
+Saved network.
+Episode: 120/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 121/1280, Score: 390.0, e: ~
+Saved network.
+Episode: 122/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 123/1280, Score: 590.0, e: ~
+Saved network.
+Episode: 124/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 125/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 126/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 127/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 128/1280, Score: 290.0, e: ~
+Finished batch: 4/40
+Mean: 1993.125 | Median: 490.0
+
+Saved network.
+Saved network.
+Episode: 129/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 130/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 131/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 132/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 133/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 134/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 135/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 136/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 137/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 138/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 139/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 140/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 141/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 142/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 143/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 144/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 145/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 146/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 147/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 148/1280, Score: 790.0, e: ~
+Saved network.
+Episode: 149/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 150/1280, Score: 390.0, e: ~
+Saved network.
+Episode: 151/1280, Score: 390.0, e: ~
+Saved network.
+Episode: 152/1280, Score: 2690.0, e: ~
+Saved network.
+Episode: 153/1280, Score: 1990.0, e: ~
+Saved network.
+Episode: 154/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 155/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 156/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 157/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 158/1280, Score: 2990.0, e: ~
+Saved network.
+Episode: 159/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 160/1280, Score: 4490.0, e: ~
+Finished batch: 5/40
+Mean: 1386.875 | Median: 290.0
+
+Saved network.
+Saved network.
+Episode: 161/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 162/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 163/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 164/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 165/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 166/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 167/1280, Score: 3490.0, e: ~
+Saved network.
+Episode: 168/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 169/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 170/1280, Score: 3390.0, e: ~
+Saved network.
+Episode: 171/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 172/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 173/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 174/1280, Score: 1690.0, e: ~
+Saved network.
+Episode: 175/1280, Score: 2190.0, e: ~
+Saved network.
+Episode: 176/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 177/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 178/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 179/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 180/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 181/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 182/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 183/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 184/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 185/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 186/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 187/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 188/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 189/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 190/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 191/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 192/1280, Score: 4890.0, e: ~
+Finished batch: 6/40
+Mean: 4183.75 | Median: 4890.0
+
+Saved network.
+Saved network.
+Episode: 193/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 194/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 195/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 196/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 197/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 198/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 199/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 200/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 201/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 202/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 203/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 204/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 205/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 206/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 207/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 208/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 209/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 210/1280, Score: 1690.0, e: ~
+Saved network.
+Episode: 211/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 212/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 213/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 214/1280, Score: 3590.0, e: ~
+Saved network.
+Episode: 215/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 216/1280, Score: 3990.0, e: ~
+Saved network.
+Episode: 217/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 218/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 219/1280, Score: 2790.0, e: ~
+Saved network.
+Episode: 220/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 221/1280, Score: 3590.0, e: ~
+Saved network.
+Episode: 222/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 223/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 224/1280, Score: 4890.0, e: ~
+Finished batch: 7/40
+Mean: 4615.0 | Median: 4890.0
+
+Saved network.
+Saved network.
+Episode: 225/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 226/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 227/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 228/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 229/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 230/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 231/1280, Score: 2990.0, e: ~
+Saved network.
+Episode: 232/1280, Score: 3390.0, e: ~
+Saved network.
+Episode: 233/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 234/1280, Score: 2590.0, e: ~
+Saved network.
+Episode: 235/1280, Score: 1790.0, e: ~
+Saved network.
+Episode: 236/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 237/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 238/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 239/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 240/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 241/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 242/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 243/1280, Score: 590.0, e: ~
+Saved network.
+Episode: 244/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 245/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 246/1280, Score: 590.0, e: ~
+Saved network.
+Episode: 247/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 248/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 249/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 250/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 251/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 252/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 253/1280, Score: 590.0, e: ~
+Saved network.
+Episode: 254/1280, Score: 590.0, e: ~
+Saved network.
+Episode: 255/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 256/1280, Score: 290.0, e: ~
+Finished batch: 8/40
+Mean: 1421.25 | Median: 490.0
+
+Saved network.
+Saved network.
+Episode: 257/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 258/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 259/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 260/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 261/1280, Score: 1590.0, e: ~
+Saved network.
+Episode: 262/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 263/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 264/1280, Score: 3590.0, e: ~
+Saved network.
+Episode: 265/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 266/1280, Score: 4790.0, e: ~
+Saved network.
+Episode: 267/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 268/1280, Score: 1690.0, e: ~
+Saved network.
+Episode: 269/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 270/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 271/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 272/1280, Score: 1790.0, e: ~
+Saved network.
+Episode: 273/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 274/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 275/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 276/1280, Score: 2890.0, e: ~
+Saved network.
+Episode: 277/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 278/1280, Score: 2690.0, e: ~
+Saved network.
+Episode: 279/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 280/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 281/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 282/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 283/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 284/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 285/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 286/1280, Score: 2690.0, e: ~
+Saved network.
+Episode: 287/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 288/1280, Score: 4890.0, e: ~
+Finished batch: 9/40
+Mean: 3052.5 | Median: 4190.0
+
+Saved network.
+Saved network.
+Episode: 289/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 290/1280, Score: 2690.0, e: ~
+Saved network.
+Episode: 291/1280, Score: 4690.0, e: ~
+Saved network.
+Episode: 292/1280, Score: 790.0, e: ~
+Saved network.
+Episode: 293/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 294/1280, Score: 590.0, e: ~
+Saved network.
+Episode: 295/1280, Score: 590.0, e: ~
+Saved network.
+Episode: 296/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 297/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 298/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 299/1280, Score: 390.0, e: ~
+Saved network.
+Episode: 300/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 301/1280, Score: 490.0, e: ~
+Saved network.
+Episode: 302/1280, Score: 3690.0, e: ~
+Saved network.
+Episode: 303/1280, Score: 2090.0, e: ~
+Saved network.
+Episode: 304/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 305/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 306/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 307/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 308/1280, Score: 3290.0, e: ~
+Saved network.
+Episode: 309/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 310/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 311/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 312/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 313/1280, Score: 3390.0, e: ~
+Saved network.
+Episode: 314/1280, Score: 2990.0, e: ~
+Saved network.
+Episode: 315/1280, Score: 3390.0, e: ~
+Saved network.
+Episode: 316/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 317/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 318/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 319/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 320/1280, Score: 4890.0, e: ~
+Finished batch: 10/40
+Mean: 3124.375 | Median: 3540.0
+
+Saved network.
+Saved network.
+Episode: 321/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 322/1280, Score: 2690.0, e: ~
+Saved network.
+Episode: 323/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 324/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 325/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 326/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 327/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 328/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 329/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 330/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 331/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 332/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 333/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 334/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 335/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 336/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 337/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 338/1280, Score: 2390.0, e: ~
+Saved network.
+Episode: 339/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 340/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 341/1280, Score: 290.0, e: ~
+Saved network.
+Episode: 342/1280, Score: 590.0, e: ~
+Saved network.
+Episode: 343/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 344/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 345/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 346/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 347/1280, Score: 2990.0, e: ~
+Saved network.
+Episode: 348/1280, Score: 2990.0, e: ~
+Saved network.
+Episode: 349/1280, Score: 3090.0, e: ~
+Saved network.
+Episode: 350/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 351/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 352/1280, Score: 4890.0, e: ~
+Finished batch: 11/40
+Mean: 4002.5 | Median: 4890.0
+
+Saved network.
+Saved network.
+Episode: 353/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 354/1280, Score: 2690.0, e: ~
+Saved network.
+Episode: 355/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 356/1280, Score: 3090.0, e: ~
+Saved network.
+Episode: 357/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 358/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 359/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 360/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 361/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 362/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 363/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 364/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 365/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 366/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 367/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 368/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 369/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 370/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 371/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 372/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 373/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 374/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 375/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 376/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 377/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 378/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 379/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 380/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 381/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 382/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 383/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 384/1280, Score: 4890.0, e: ~
+Finished batch: 12/40
+Mean: 4765.0 | Median: 4890.0
+
+Saved network.
+Saved network.
+Episode: 385/1280, Score: 4390.0, e: ~
+Saved network.
+Episode: 386/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 387/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 388/1280, Score: 4490.0, e: ~
+Saved network.
+Episode: 389/1280, Score: 1390.0, e: ~
+Saved network.
+Episode: 390/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 391/1280, Score: 4890.0, e: ~
+Saved network.
+Episode: 392/1280, Score: 4890.0, e: ~
+
