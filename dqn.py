@@ -27,7 +27,7 @@ class DQNAgent:
 
         # define the input shape
         self.width = 84
-        self.height = 84  # 96
+        self.height = 84
         self.state_length = 4
 
         self.batch_size = 32
@@ -131,7 +131,7 @@ class DQNAgent:
             next_state_batch.append(next_state)
             done_batch.append(done)
 
-        done_batch = np.array(done_batch) + 0
+        done_batch = numpy.array(done_batch) + 0
         # Q value from target network
         print('Prediction time')
         print(list2np(next_state_batch))
@@ -141,18 +141,13 @@ class DQNAgent:
 
         a_one_hot = numpy.zeros((self.batch_size, self.action_size))
 
-        for idx, ac in enumerate(action_batch):
-            a_one_hot[idx, ac] = 1.0
+        for i, ac in enumerate(action_batch):
+            a_one_hot[i, ac] = 1.0
 
         loss = self.model.train_on_batch([list2np(state_batch), a_one_hot], [self.dummy_batch, y_batch])
         self.total_loss += loss[1]
-        #         target = (reward + self.gamma *
-        #                   np.amax(self.model.predict(next_state)[0]))
-        #     target_f = self.model.predict(state)
-        #     target_f[0][action] = target
-        #     self.model.fit(state, target_f, epochs=1, verbose=0)
-        # if self.epsilon > self.epsilon_min:
-        #     self.epsilon *= self.epsilon_decay
+        if self.epsilon > self.epsilon_min:
+            self.epsilon *= self.epsilon_decay
 
     def load(self, name):
         self.model.load_weights(name)
