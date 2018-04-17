@@ -53,7 +53,6 @@ class DQNAgent:
         self.target_network = self._build_model()
         self.target_network.set_weights(self.model.get_weights())
 
-
     # Neural Net for Deep-Q learning Model
     def _build_model(self):
         # second method
@@ -163,6 +162,7 @@ class DQNAgent:
 
     def save(self, name):
         self.model.save_weights(name)
+
 
 def lambda_out_shape(input_shape):
     shape = list(input_shape)
